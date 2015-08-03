@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */; };
+		10EE6DEF1B6FE341007A8659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEE1B6FE341007A8659 /* ViewController.swift */; };
+		10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF01B6FE341007A8659 /* Main.storyboard */; };
+		10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF31B6FE341007A8659 /* Images.xcassets */; };
+		10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */; };
+		10EE6E031B6FE341007A8659 /* Craft_Beer_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E021B6FE341007A8659 /* Craft_Beer_MapTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10EE6DFD1B6FE341007A8659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10EE6DDF1B6FE341007A8659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10EE6DE61B6FE341007A8659;
+			remoteInfo = "Craft Beer Map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10EE6DE71B6FE341007A8659 /* Craft Beer Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craft Beer Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EE6DEB1B6FE341007A8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10EE6DEE1B6FE341007A8659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10EE6DF11B6FE341007A8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10EE6DF31B6FE341007A8659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10EE6DF61B6FE341007A8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10EE6DFC1B6FE341007A8659 /* Craft Beer MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Craft Beer MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EE6E011B6FE341007A8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EE6E021B6FE341007A8659 /* Craft_Beer_MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Craft_Beer_MapTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10EE6DE41B6FE341007A8659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EE6DF91B6FE341007A8659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10EE6DDE1B6FE341007A8659 = {
+			isa = PBXGroup;
+			children = (
+				10EE6DE91B6FE341007A8659 /* Craft Beer Map */,
+				10EE6DFF1B6FE341007A8659 /* Craft Beer MapTests */,
+				10EE6DE81B6FE341007A8659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10EE6DE81B6FE341007A8659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6DE71B6FE341007A8659 /* Craft Beer Map.app */,
+				10EE6DFC1B6FE341007A8659 /* Craft Beer MapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10EE6DE91B6FE341007A8659 /* Craft Beer Map */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */,
+				10EE6DEE1B6FE341007A8659 /* ViewController.swift */,
+				10EE6DF01B6FE341007A8659 /* Main.storyboard */,
+				10EE6DF31B6FE341007A8659 /* Images.xcassets */,
+				10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */,
+				10EE6DEA1B6FE341007A8659 /* Supporting Files */,
+			);
+			path = "Craft Beer Map";
+			sourceTree = "<group>";
+		};
+		10EE6DEA1B6FE341007A8659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6DEB1B6FE341007A8659 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10EE6DFF1B6FE341007A8659 /* Craft Beer MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6E021B6FE341007A8659 /* Craft_Beer_MapTests.swift */,
+				10EE6E001B6FE341007A8659 /* Supporting Files */,
+			);
+			path = "Craft Beer MapTests";
+			sourceTree = "<group>";
+		};
+		10EE6E001B6FE341007A8659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6E011B6FE341007A8659 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10EE6DE61B6FE341007A8659 /* Craft Beer Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10EE6E061B6FE341007A8659 /* Build configuration list for PBXNativeTarget "Craft Beer Map" */;
+			buildPhases = (
+				10EE6DE31B6FE341007A8659 /* Sources */,
+				10EE6DE41B6FE341007A8659 /* Frameworks */,
+				10EE6DE51B6FE341007A8659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Craft Beer Map";
+			productName = "Craft Beer Map";
+			productReference = 10EE6DE71B6FE341007A8659 /* Craft Beer Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10EE6DFB1B6FE341007A8659 /* Craft Beer MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10EE6E091B6FE341007A8659 /* Build configuration list for PBXNativeTarget "Craft Beer MapTests" */;
+			buildPhases = (
+				10EE6DF81B6FE341007A8659 /* Sources */,
+				10EE6DF91B6FE341007A8659 /* Frameworks */,
+				10EE6DFA1B6FE341007A8659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10EE6DFE1B6FE341007A8659 /* PBXTargetDependency */,
+			);
+			name = "Craft Beer MapTests";
+			productName = "Craft Beer MapTests";
+			productReference = 10EE6DFC1B6FE341007A8659 /* Craft Beer MapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10EE6DDF1B6FE341007A8659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Gregory Lavery";
+				TargetAttributes = {
+					10EE6DE61B6FE341007A8659 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					10EE6DFB1B6FE341007A8659 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 10EE6DE61B6FE341007A8659;
+					};
+				};
+			};
+			buildConfigurationList = 10EE6DE21B6FE341007A8659 /* Build configuration list for PBXProject "Craft Beer Map" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10EE6DDE1B6FE341007A8659;
+			productRefGroup = 10EE6DE81B6FE341007A8659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10EE6DE61B6FE341007A8659 /* Craft Beer Map */,
+				10EE6DFB1B6FE341007A8659 /* Craft Beer MapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10EE6DE51B6FE341007A8659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
+				10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */,
+				10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EE6DFA1B6FE341007A8659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10EE6DE31B6FE341007A8659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EE6DEF1B6FE341007A8659 /* ViewController.swift in Sources */,
+				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10EE6DF81B6FE341007A8659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EE6E031B6FE341007A8659 /* Craft_Beer_MapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10EE6DFE1B6FE341007A8659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10EE6DE61B6FE341007A8659 /* Craft Beer Map */;
+			targetProxy = 10EE6DFD1B6FE341007A8659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10EE6DF01B6FE341007A8659 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10EE6DF11B6FE341007A8659 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10EE6DF61B6FE341007A8659 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10EE6E041B6FE341007A8659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10EE6E051B6FE341007A8659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10EE6E071B6FE341007A8659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Craft Beer Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10EE6E081B6FE341007A8659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Craft Beer Map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10EE6E0A1B6FE341007A8659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Craft Beer MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craft Beer Map.app/Craft Beer Map";
+			};
+			name = Debug;
+		};
+		10EE6E0B1B6FE341007A8659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Craft Beer MapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craft Beer Map.app/Craft Beer Map";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10EE6DE21B6FE341007A8659 /* Build configuration list for PBXProject "Craft Beer Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EE6E041B6FE341007A8659 /* Debug */,
+				10EE6E051B6FE341007A8659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10EE6E061B6FE341007A8659 /* Build configuration list for PBXNativeTarget "Craft Beer Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EE6E071B6FE341007A8659 /* Debug */,
+				10EE6E081B6FE341007A8659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10EE6E091B6FE341007A8659 /* Build configuration list for PBXNativeTarget "Craft Beer MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EE6E0A1B6FE341007A8659 /* Debug */,
+				10EE6E0B1B6FE341007A8659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10EE6DDF1B6FE341007A8659 /* Project object */;
+}
