@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Beer" syncable="YES">
+        <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewerName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Brewer" syncable="YES">
+        <attribute name="brewerAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewerDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewerImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewerLocation" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="brewerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewerPhoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Taphouse" syncable="YES">
+        <attribute name="taphouseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taphouseImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taphouseLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taphouseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taphousePhoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tour" syncable="YES">
+        <attribute name="tourDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tourImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tourLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tourName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tourPhoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beer" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Brewer" positionX="-54" positionY="18" width="128" height="135"/>
+        <element name="Taphouse" positionX="-36" positionY="63" width="128" height="120"/>
+        <element name="Tour" positionX="-18" positionY="90" width="128" height="120"/>
+    </elements>
+</model>

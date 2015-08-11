@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109C6AB81B7A805100C955B4 /* CraftBeerMapModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AB61B7A805100C955B4 /* CraftBeerMapModel.xcdatamodeld */; };
+		109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */; };
 		10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */; };
-		10EE6DEF1B6FE341007A8659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEE1B6FE341007A8659 /* ViewController.swift */; };
+		10EE6DEF1B6FE341007A8659 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEE1B6FE341007A8659 /* MapViewController.swift */; };
 		10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF01B6FE341007A8659 /* Main.storyboard */; };
 		10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF31B6FE341007A8659 /* Images.xcassets */; };
 		10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */; };
@@ -44,10 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		109C6AB71B7A805100C955B4 /* CraftBeerMapModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftBeerMapModel.xcdatamodel; sourceTree = "<group>"; };
+		109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-mapLarge.jpg"; sourceTree = "<group>"; };
 		10EE6DE71B6FE341007A8659 /* Craft Beer Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craft Beer Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EE6DEB1B6FE341007A8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10EE6DEE1B6FE341007A8659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10EE6DEE1B6FE341007A8659 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		10EE6DF11B6FE341007A8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10EE6DF31B6FE341007A8659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		10EE6DF61B6FE341007A8659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */,
-				10EE6DEE1B6FE341007A8659 /* ViewController.swift */,
+				10EE6DEE1B6FE341007A8659 /* MapViewController.swift */,
 				10EE6DF01B6FE341007A8659 /* Main.storyboard */,
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
 				10EE6E161B6FEB80007A8659 /* Beers.swift */,
@@ -122,6 +126,7 @@
 				10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */,
 				10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */,
 				10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */,
+				109C6AB61B7A805100C955B4 /* CraftBeerMapModel.xcdatamodeld */,
 				10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */,
 				10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */,
 				10EE6E2A1B700641007A8659 /* 1438651657_factory.png */,
@@ -133,6 +138,7 @@
 				10EE6E321B7015E6007A8659 /* barnstormer.png */,
 				10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */,
 				10EE6E301B700DAB007A8659 /* taphouse2.jpg */,
+				109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */,
 				10EE6E341B702058007A8659 /* craft-beer-map.jpg */,
 				10EE6DF31B6FE341007A8659 /* Images.xcassets */,
 				10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */,
@@ -253,6 +259,7 @@
 				10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */,
 				10EE6E2F1B700701007A8659 /* 1438651851_beer.png in Resources */,
 				10EE6E0D1B6FE44E007A8659 /* BeerMap-Cover1.jpg in Resources */,
+				109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */,
 				10EE6E291B7005CF007A8659 /* 1438651544_09-house.png in Resources */,
 				10EE6E351B702058007A8659 /* craft-beer-map.jpg in Resources */,
 				10EE6E311B700DAB007A8659 /* taphouse2.jpg in Resources */,
@@ -278,7 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10EE6DEF1B6FE341007A8659 /* ViewController.swift in Sources */,
+				109C6AB81B7A805100C955B4 /* CraftBeerMapModel.xcdatamodeld in Sources */,
+				10EE6DEF1B6FE341007A8659 /* MapViewController.swift in Sources */,
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
 				10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */,
@@ -483,6 +491,7 @@
 				10EE6E081B6FE341007A8659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10EE6E091B6FE341007A8659 /* Build configuration list for PBXNativeTarget "Craft Beer MapTests" */ = {
 			isa = XCConfigurationList;
@@ -491,8 +500,23 @@
 				10EE6E0B1B6FE341007A8659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		109C6AB61B7A805100C955B4 /* CraftBeerMapModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				109C6AB71B7A805100C955B4 /* CraftBeerMapModel.xcdatamodel */,
+			);
+			currentVersion = 109C6AB71B7A805100C955B4 /* CraftBeerMapModel.xcdatamodel */;
+			name = CraftBeerMapModel.xcdatamodeld;
+			path = ../CraftBeerMapModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10EE6DDF1B6FE341007A8659 /* Project object */;
 }
