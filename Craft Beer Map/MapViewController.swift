@@ -17,7 +17,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let image = UIImage(named: "craft-beer-mapLarge.jpg")!
+        let image = UIImage(named: "square_map.png")!
         imageView = UIImageView(image: image)
         imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size:image.size)
         scrollView.addSubview(imageView)
@@ -45,6 +45,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         // 6
         centerScrollViewContents()
     }
+    
     
     func centerScrollViewContents() {
         let boundsSize = scrollView.bounds.size

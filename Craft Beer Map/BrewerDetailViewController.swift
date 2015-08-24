@@ -1,27 +1,26 @@
 //
-//  BeerDetailViewController.swift
-//  Craft Beer Map
+//  BrewerDetailViewController.swift
+//  CraftBeerMap
 //
-//  Created by Gregory Lavery on 03/08/2015.
+//  Created by Aidan Lavery on 2015-08-17.
 //  Copyright (c) 2015 Gregory Lavery. All rights reserved.
 //
 
 import UIKit
 
-class BeerDetailViewController: UIViewController {
-
-    var beerName:String!
-    var beerDescription:String!
-    var beerBrewer:String!
+class BrewerDetailViewController: UIViewController {
     
+    @IBOutlet weak var brewerInformation: UITextView!
+    var brewerDescription:String!
+    var brewerName:String!
+    var brewerDetails:String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var textViewToUpdate = self.view.viewWithTag(20) as! UITextView
-        textViewToUpdate.text = beerBrewer
-        var secondTextViewToUpdate = self.view.viewWithTag(21) as! UITextView
-        secondTextViewToUpdate.text = beerDescription
-        // Do any additional setup after loading the view.
+        var textViewToUpdate = self.view.viewWithTag(12) as! UITextView
+        textViewToUpdate.text = brewerDetails
+        var secondTextViewToUpdate = self.view.viewWithTag(11) as! UITextView
+        secondTextViewToUpdate.text = brewerDescription
     }
 
     override func didReceiveMemoryWarning() {

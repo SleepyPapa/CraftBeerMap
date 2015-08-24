@@ -1,26 +1,26 @@
 //
-//  BeerDetailViewController.swift
-//  Craft Beer Map
+//  TapHouseDetailViewController.swift
+//  CraftBeerMap
 //
-//  Created by Gregory Lavery on 03/08/2015.
+//  Created by Daddy on 2015-08-24.
 //  Copyright (c) 2015 Gregory Lavery. All rights reserved.
 //
 
 import UIKit
 
-class BeerDetailViewController: UIViewController {
+class TapHouseDetailViewController: UIViewController {
 
-    var beerName:String!
-    var beerDescription:String!
-    var beerBrewer:String!
+    var tapHouseName :String!
+    var tapHouseDescription :String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var textViewToUpdate = self.view.viewWithTag(20) as! UITextView
-        textViewToUpdate.text = beerBrewer
-        var secondTextViewToUpdate = self.view.viewWithTag(21) as! UITextView
-        secondTextViewToUpdate.text = beerDescription
+        var textViewToUpdate = self.view.viewWithTag(30) as! UITextView
+        textViewToUpdate.text = tapHouseName
+        var secondTextViewToUpdate = self.view.viewWithTag(31) as! UITextView
+        secondTextViewToUpdate.text = tapHouseDescription
+
+
         // Do any additional setup after loading the view.
     }
 

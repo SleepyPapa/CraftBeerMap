@@ -8,11 +8,34 @@
 
 import UIKit
 
-class ToursUIViewController: UIViewController {
+class ToursUIViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
 
+    @IBOutlet weak var tableView: UITableView!
+    let textCellIdentifier = "ToursCell"
+    let arrayTours = ["Pickle Tours", "Pub Crawlers", "Evening Out"]
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let row = indexPath.row
+        cell.textLabel?.text = arrayTours[row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayTours.count
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
 

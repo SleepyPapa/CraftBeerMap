@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hcV-MQ-s9S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hcV-MQ-s9S">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -103,103 +104,83 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFd-b6-hPq">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phillips" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fR-HQ-OB0">
-                                        <rect key="frame" x="448" y="8" width="128" height="21"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
+                                        <rect key="frame" x="8" y="20" width="584" height="244"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="128" id="ONR-h3-DZn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010 Government St." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3At-ix-Scr">
-                                        <rect key="frame" x="448" y="37" width="128" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="DAI-RH-mu2"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victoria, BC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-wn-z9O">
-                                        <rect key="frame" x="448" y="66" width="128" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="oyW-QI-FyR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
-                                        <rect key="frame" x="8" y="0.0" width="155" height="239"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="155" id="B1V-Vl-VA2"/>
-                                            <constraint firstAttribute="height" constant="239" id="sEn-MT-k4p"/>
+                                            <constraint firstAttribute="height" constant="244" id="jwz-kM-qrj"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(250) 380-1912" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIJ-3c-9sF">
-                                        <rect key="frame" x="448" y="95" width="128" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="5hn-Rm-ZSf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHv-74-I2T">
-                                        <rect key="frame" x="8" y="247" width="584" height="232"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="21" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHv-74-I2T">
+                                        <rect key="frame" x="8" y="388" width="584" height="155"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="155" id="4v5-CW-V5z"/>
                                             <constraint firstAttribute="height" constant="232" id="ycb-oy-DAf"/>
                                         </constraints>
                                         <string key="text">The Blue Buck is a legendary beast known to grant those that see him good fortune and safe travels! A deep amber coloured beer, the Blue Buck has a crisp finish featuring a delicate hop aroma. Certainly seeing the Blue Buck on bottle grants the drinker a great experience! Worth searching for.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ycb-oy-DAf"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="20" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP7-io-50B">
+                                        <rect key="frame" x="8" y="272" width="584" height="108"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="As9-nU-YGS"/>
+                                        </constraints>
+                                        <string key="text">Phillips Brewing Company
+2010 Government Street
+Victoria, BC
+V8T 4PI
+info@phillipsbeer.com
+(250)380-1912</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="centerX" secondItem="XFd-b6-hPq" secondAttribute="centerX" id="BMG-Gv-YbX"/>
-                                    <constraint firstItem="3At-ix-Scr" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" constant="37" id="DCJ-eh-22Z"/>
-                                    <constraint firstItem="8h5-wn-z9O" firstAttribute="leading" secondItem="3At-ix-Scr" secondAttribute="leading" id="DR5-cq-25q"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="top" secondItem="dqC-Md-9Iu" secondAttribute="bottom" constant="8" symbolic="YES" id="EKY-Ft-mHC"/>
-                                    <constraint firstItem="3At-ix-Scr" firstAttribute="top" secondItem="1fR-HQ-OB0" secondAttribute="bottom" constant="8" symbolic="YES" id="HYG-tU-psl"/>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" id="I6k-ZI-gzM"/>
-                                    <constraint firstAttribute="trailing" secondItem="FIJ-3c-9sF" secondAttribute="trailing" constant="24" id="JrB-R9-jcU"/>
-                                    <constraint firstItem="1fR-HQ-OB0" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="topMargin" id="Kym-AT-Iwk"/>
-                                    <constraint firstItem="FIJ-3c-9sF" firstAttribute="trailing" secondItem="8h5-wn-z9O" secondAttribute="trailing" id="NKM-KM-vyJ"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="bottom" secondItem="XFd-b6-hPq" secondAttribute="bottomMargin" id="RJs-mT-jOm"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="leading" secondItem="dqC-Md-9Iu" secondAttribute="leading" id="Zid-9t-1SU"/>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" id="a3f-hy-7bO"/>
-                                    <constraint firstItem="8h5-wn-z9O" firstAttribute="trailing" secondItem="3At-ix-Scr" secondAttribute="trailing" id="cth-fH-dPP"/>
-                                    <constraint firstItem="8h5-wn-z9O" firstAttribute="top" secondItem="3At-ix-Scr" secondAttribute="bottom" constant="8" symbolic="YES" id="dQb-Qv-g1f"/>
-                                    <constraint firstItem="3At-ix-Scr" firstAttribute="trailing" secondItem="1fR-HQ-OB0" secondAttribute="trailing" id="nK3-nD-L4B"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailingMargin" id="o8h-Ky-Qes"/>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="leading" secondItem="XFd-b6-hPq" secondAttribute="leading" constant="8" id="qKh-1G-sQT"/>
-                                    <constraint firstItem="3At-ix-Scr" firstAttribute="leading" secondItem="1fR-HQ-OB0" secondAttribute="leading" id="rzL-OU-eSN"/>
-                                    <constraint firstItem="FIJ-3c-9sF" firstAttribute="top" secondItem="8h5-wn-z9O" secondAttribute="bottom" constant="8" symbolic="YES" id="sv9-qY-5pq"/>
-                                    <constraint firstItem="FIJ-3c-9sF" firstAttribute="leading" secondItem="8h5-wn-z9O" secondAttribute="leading" id="x2Z-bi-2CW"/>
+                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" constant="20" id="5eh-t6-CtE"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="bottom" secondItem="XFd-b6-hPq" secondAttribute="bottomMargin" id="BUl-nY-CET"/>
+                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="leading" secondItem="SP7-io-50B" secondAttribute="leading" id="CNb-8I-8Ht"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="top" secondItem="SP7-io-50B" secondAttribute="bottom" constant="8" symbolic="YES" id="SkO-ih-xEc"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="leading" secondItem="XFd-b6-hPq" secondAttribute="leadingMargin" id="Szi-oc-ozL"/>
+                                    <constraint firstItem="SP7-io-50B" firstAttribute="top" secondItem="dqC-Md-9Iu" secondAttribute="bottom" constant="8" symbolic="YES" id="WAO-g8-TQM"/>
+                                    <constraint firstItem="SP7-io-50B" firstAttribute="trailing" secondItem="AHv-74-I2T" secondAttribute="trailing" id="Ye5-fz-KBx"/>
+                                    <constraint firstItem="SP7-io-50B" firstAttribute="leading" secondItem="AHv-74-I2T" secondAttribute="leading" id="gVs-Gl-svl"/>
+                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="trailing" secondItem="SP7-io-50B" secondAttribute="trailing" id="ld6-v2-6iq"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailingMargin" id="qXY-6l-wTe"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="centerX" secondItem="XFd-b6-hPq" secondAttribute="centerX" id="t0K-ir-piR"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="bottom" secondItem="sgc-rs-JKi" secondAttribute="top" id="9ae-YB-ZM2"/>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="top" secondItem="q4m-n9-MYA" secondAttribute="bottom" id="AAj-Vw-0lh"/>
-                            <constraint firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailing" id="j8T-Tp-fDM"/>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="leading" secondItem="Kaw-Yx-q0o" secondAttribute="leading" id="wwG-f3-DLO"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="leading" secondItem="Kaw-Yx-q0o" secondAttribute="leading" id="E6j-pz-eg7"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="bottom" secondItem="sgc-rs-JKi" secondAttribute="top" id="GHY-Ys-70k"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="top" secondItem="Kaw-Yx-q0o" secondAttribute="top" id="Hxi-Pm-blM"/>
+                            <constraint firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailing" id="ykJ-Su-nJ3"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBc-gb-Z1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4758" y="530"/>
         </scene>
-        <!--View Controller-->
+        <!--Brewer Detail View Controller-->
         <scene sceneID="AuK-7D-pQj">
             <objects>
-                <viewController id="Enr-cj-za8" sceneMemberID="viewController">
+                <viewController id="Enr-cj-za8" customClass="BrewerDetailViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2M-Wq-nnj"/>
                         <viewControllerLayoutGuide type="bottom" id="Ie5-My-ioh"/>
@@ -211,31 +192,44 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-Vd-u6H">
                                 <rect key="frame" x="16" y="0.0" width="568" height="548"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-1g-YRu">
-                                        <rect key="frame" x="0.0" y="300" width="568" height="248"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" editable="NO" text="Placeholder Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-1g-YRu">
+                                        <rect key="frame" x="0.0" y="416" width="568" height="232"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="248" id="zt3-EU-DmS"/>
+                                            <constraint firstAttribute="height" constant="232" id="ms9-PV-wN1"/>
                                         </constraints>
-                                        <string key="text">July 21st, 2015: Barnstormer Saison IPA is a brand new Phillips seasonal that just left our hangar! Pouring a golden straw colour with a marshmallow white head, fruity esters on the nose lead to flavours of banana and cotton candy. Invert the bottle and throw your tastebuds for a loop-de-loop!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barnstormer.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Jj-UCJ">
+                                    <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barnstormer.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Jj-UCJ">
                                         <rect key="frame" x="126" y="8" width="317" height="273"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="273" id="zIY-gG-HjW"/>
+                                            <constraint firstAttribute="height" constant="273" id="3oc-xq-jxi"/>
                                         </constraints>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="scaleToFill" editable="NO" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-Fs-bCx">
+                                        <rect key="frame" x="0.0" y="289" width="568" height="119"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="119" id="wBb-U8-8S0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Es5-1g-YRu" firstAttribute="top" secondItem="rcV-Jj-UCJ" secondAttribute="bottom" constant="19" id="6UW-4m-Q8l"/>
-                                    <constraint firstAttribute="trailing" secondItem="Es5-1g-YRu" secondAttribute="trailing" id="P7R-gW-rEi"/>
-                                    <constraint firstAttribute="bottom" secondItem="Es5-1g-YRu" secondAttribute="bottom" id="Xdp-Uh-Upf"/>
-                                    <constraint firstItem="Es5-1g-YRu" firstAttribute="centerX" secondItem="rcV-Jj-UCJ" secondAttribute="centerX" id="aY8-Ch-1aw"/>
-                                    <constraint firstItem="rcV-Jj-UCJ" firstAttribute="top" secondItem="aDk-Vd-u6H" secondAttribute="topMargin" id="ej4-i3-DRr"/>
-                                    <constraint firstItem="rcV-Jj-UCJ" firstAttribute="centerX" secondItem="aDk-Vd-u6H" secondAttribute="centerX" id="gyo-oY-Eh5"/>
-                                    <constraint firstItem="Es5-1g-YRu" firstAttribute="leading" secondItem="aDk-Vd-u6H" secondAttribute="leading" id="v30-ds-1kC"/>
+                                    <constraint firstAttribute="bottom" secondItem="rcV-Jj-UCJ" secondAttribute="bottom" constant="267" id="9mI-yg-jjZ"/>
+                                    <constraint firstItem="rcV-Jj-UCJ" firstAttribute="centerX" secondItem="aDk-Vd-u6H" secondAttribute="centerX" id="FWb-UK-N4b"/>
+                                    <constraint firstItem="ubz-Fs-bCx" firstAttribute="centerX" secondItem="rcV-Jj-UCJ" secondAttribute="centerX" id="Juj-vs-6xz"/>
+                                    <constraint firstItem="ubz-Fs-bCx" firstAttribute="trailing" secondItem="Es5-1g-YRu" secondAttribute="trailing" id="Odc-Wy-3fg"/>
+                                    <constraint firstItem="Es5-1g-YRu" firstAttribute="top" secondItem="ubz-Fs-bCx" secondAttribute="bottom" constant="8" symbolic="YES" id="Uc8-Qy-4q2"/>
+                                    <constraint firstItem="ubz-Fs-bCx" firstAttribute="leading" secondItem="Es5-1g-YRu" secondAttribute="leading" id="eGD-YG-S3s"/>
+                                    <constraint firstAttribute="trailing" secondItem="ubz-Fs-bCx" secondAttribute="trailing" id="hkK-6f-PaF"/>
+                                    <constraint firstItem="ubz-Fs-bCx" firstAttribute="top" secondItem="rcV-Jj-UCJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jhw-Xe-Han"/>
+                                    <constraint firstItem="rcV-Jj-UCJ" firstAttribute="top" secondItem="aDk-Vd-u6H" secondAttribute="topMargin" id="nWo-Jn-tp2"/>
+                                    <constraint firstItem="ubz-Fs-bCx" firstAttribute="leading" secondItem="aDk-Vd-u6H" secondAttribute="leading" id="vID-Ns-Wj4"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -248,6 +242,9 @@
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="brewerInformation" destination="ubz-Fs-bCx" id="TVe-rw-gjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ekR-9C-hGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +273,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="jiv-Qc-RK8" kind="show" id="ZbR-xK-HNU"/>
+                                            <segue destination="jiv-Qc-RK8" kind="show" identifier="segueTapHouse" id="ZbR-xK-HNU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -297,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfR-W4-7za" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2443" y="2555"/>
+            <point key="canvasLocation" x="4051" y="2651"/>
         </scene>
         <!--BreweriesViewController-->
         <scene sceneID="fpa-mt-uH0">
@@ -322,7 +319,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Enr-cj-za8" kind="show" id="bpI-is-4Yn"/>
+                                            <segue destination="Enr-cj-za8" kind="show" identifier="segueBrewer" id="bpI-is-4Yn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -345,88 +342,10 @@
             </objects>
             <point key="canvasLocation" x="4051" y="1194"/>
         </scene>
-        <!--ToursViewController-->
-        <scene sceneID="xs4-cF-ldc">
-            <objects>
-                <viewController id="emb-dv-nKx" userLabel="ToursViewController" customClass="ToursUIViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CAr-Qd-UXW"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Zv-Rx-zNe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Jhn-dj-3qM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koy-XL-0N1">
-                                <rect key="frame" x="16" y="72" width="568" height="471"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerglasses.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="015-f6-Bth">
-                                        <rect key="frame" x="152" y="8" width="265" height="238"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="265" id="1U1-e4-P5Q"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-jr-J5z">
-                                        <rect key="frame" x="8" y="254" width="552" height="217"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">DATE &amp; TIME:
-
-May 15, 2015 to September 20, 2015
-7 days a week
-Pub Crawls start:  10am - 5:30pm (call us to get a time slot)
-Ferries run 10am - 9pm 
-PRICE:   
-
-Thursday, Friday &amp; Saturday - $20 per wristband
-25% off Sunday to Wednesday - $15 per wristband - It's not as busy and it's cheaper!!!
-IMPORTANT INFORMATION:
-
-There are limited tickets - so purchase your tickets early - we do sell out!  Call 250-708-0201 to buy your tickets (sorry, no refunds).  First come first served!! 
-If you are trying to get tickets for the day of...head down to the Steamship Terminal Kiosk and cross your fingers that there are still tickets left!  
-Once your tickets have been purchased, they will be waiting for you at the Steamship Terminal kiosk on the day of your pub crawl.
-All Pickle Pub Crawls start at the Steamship Terminal on or before 5:30pm.
-Tickets can be scanned 4 times to allow for 4 ferry hops. Please hold on to your ticket as you will need it to get on the ferry each time.
-Pickle Pub Crawl wristbands DO NOT guarantee you a seat in the pubs. You will have to wait to be seated at all the venues like everyone else. If this is a problem, please feel free to call the venues to give them a heads up.
-Wait times for ferries and restaurants can sometimes be more than 30 minutes.
-Every group of 4 receives one free appetizer with drink purchase.  If you have 4 people, you get 1 appetizer...if you have 8 people, you get 2 appetizers...if you have 10 people, you still only get 2 appetizers.  
-You must be 19 years or over.
-One restaurant bill per group.
-Wristband is valid for day of purchase only.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="gB2-jr-J5z" firstAttribute="top" secondItem="015-f6-Bth" secondAttribute="bottom" constant="8" symbolic="YES" id="9Bl-Np-PxN"/>
-                                    <constraint firstAttribute="bottom" secondItem="015-f6-Bth" secondAttribute="bottom" constant="225" id="9iC-83-Yzu"/>
-                                    <constraint firstItem="015-f6-Bth" firstAttribute="top" secondItem="koy-XL-0N1" secondAttribute="topMargin" id="JYW-xr-bZd"/>
-                                    <constraint firstAttribute="bottom" secondItem="gB2-jr-J5z" secondAttribute="bottom" id="LA6-4t-X1o"/>
-                                    <constraint firstItem="015-f6-Bth" firstAttribute="centerX" secondItem="gB2-jr-J5z" secondAttribute="centerX" id="R70-fR-gOH"/>
-                                    <constraint firstItem="gB2-jr-J5z" firstAttribute="top" secondItem="koy-XL-0N1" secondAttribute="top" constant="254" id="e9f-FH-LSa"/>
-                                    <constraint firstAttribute="trailing" secondItem="gB2-jr-J5z" secondAttribute="trailing" constant="8" id="rDn-Db-yic"/>
-                                    <constraint firstItem="015-f6-Bth" firstAttribute="centerX" secondItem="koy-XL-0N1" secondAttribute="centerX" id="rss-Xa-J4o"/>
-                                    <constraint firstItem="gB2-jr-J5z" firstAttribute="leading" secondItem="koy-XL-0N1" secondAttribute="leading" constant="8" id="xHf-oQ-ahv"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="koy-XL-0N1" firstAttribute="top" secondItem="CAr-Qd-UXW" secondAttribute="bottom" constant="8" symbolic="YES" id="4wL-yV-Q6s"/>
-                            <constraint firstItem="2Zv-Rx-zNe" firstAttribute="top" secondItem="koy-XL-0N1" secondAttribute="bottom" constant="8" symbolic="YES" id="gaf-ce-y87"/>
-                            <constraint firstItem="koy-XL-0N1" firstAttribute="leading" secondItem="Jhn-dj-3qM" secondAttribute="leadingMargin" id="x1t-01-2V9"/>
-                            <constraint firstItem="koy-XL-0N1" firstAttribute="trailing" secondItem="Jhn-dj-3qM" secondAttribute="trailingMargin" id="zdi-hL-dF7"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Tours" id="F3n-XV-aZ5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GCb-ok-aFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4867" y="2009"/>
-        </scene>
-        <!--View Controller-->
+        <!--Tap House Detail View Controller-->
         <scene sceneID="8q8-k2-DDe">
             <objects>
-                <viewController id="jiv-Qc-RK8" sceneMemberID="viewController">
+                <viewController id="jiv-Qc-RK8" customClass="TapHouseDetailViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WPA-rh-zK5"/>
                         <viewControllerLayoutGuide type="bottom" id="lMW-2C-Avh"/>
@@ -435,49 +354,82 @@ Wristband is valid for day of purchase only.</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-6R-LAe">
-                                <rect key="frame" x="16" y="20" width="568" height="544"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-6R-LAe">
+                                <rect key="frame" x="16" y="0.0" width="568" height="564"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-0R-fcq">
-                                        <rect key="frame" x="0.0" y="279" width="568" height="257"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="297"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="257" id="Gd2-fd-5Zc"/>
+                                            <constraint firstAttribute="width" secondItem="O0M-3L-WnQ" secondAttribute="height" multiplier="568:297" id="l7w-ex-Flt"/>
                                         </constraints>
-                                        <string key="text">We are located in the oldest continuously operating hotel in British Columbia – a location that boasts a long and honorable history in the service industry. This Victoria pub has provided comfort, companionship, and cold pints to miners and tourists dating back to 1862. It was a place where you could get a good meal, share a laugh, and rest your weary bones after a long hard day.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
-                                        <rect key="frame" x="0.0" y="8" width="568" height="269"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="l7w-ex-Flt"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="31" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5Z3-hB-wRg">
+                                        <rect key="frame" x="8" y="424" width="552" height="132"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="AQf-u0-t17"/>
+                                            <constraint firstAttribute="height" constant="132" id="ugY-zE-q3T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="AQf-u0-t17"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="30" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-It-HH5">
+                                        <rect key="frame" x="8" y="298" width="552" height="118"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="118" id="lFg-AK-rPd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="O0M-3L-WnQ" secondAttribute="centerX" id="G4S-et-qlP"/>
-                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="leading" secondItem="rvt-6R-LAe" secondAttribute="leading" id="IRe-Tb-fp2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Cov-0R-fcq" secondAttribute="trailing" id="QXx-el-Z5V"/>
-                                    <constraint firstAttribute="centerX" secondItem="Cov-0R-fcq" secondAttribute="centerX" id="Xzf-uM-CsP"/>
-                                    <constraint firstItem="Cov-0R-fcq" firstAttribute="top" secondItem="O0M-3L-WnQ" secondAttribute="bottom" constant="2" id="Yh7-Av-bRt"/>
-                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="top" secondItem="rvt-6R-LAe" secondAttribute="top" constant="8" id="aeV-FI-l1R"/>
-                                    <constraint firstItem="Cov-0R-fcq" firstAttribute="bottom" secondItem="rvt-6R-LAe" secondAttribute="bottomMargin" id="eXV-cT-sUZ"/>
-                                    <constraint firstItem="Cov-0R-fcq" firstAttribute="top" secondItem="rvt-6R-LAe" secondAttribute="top" constant="279" id="rXv-CE-OBL"/>
-                                    <constraint firstItem="Cov-0R-fcq" firstAttribute="leading" secondItem="rvt-6R-LAe" secondAttribute="leading" id="rbi-0u-j3V"/>
+                                    <constraint firstItem="7hw-It-HH5" firstAttribute="top" secondItem="O0M-3L-WnQ" secondAttribute="bottom" constant="1" id="2vN-hp-DHQ"/>
+                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="trailing" secondItem="7hw-It-HH5" secondAttribute="trailing" id="Bsp-SJ-6Zp"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="leading" secondItem="7hw-It-HH5" secondAttribute="leading" id="LDm-rT-7e9"/>
+                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="trailing" secondItem="rvt-6R-LAe" secondAttribute="trailingMargin" id="TSD-6e-Yef"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="top" secondItem="rvt-6R-LAe" secondAttribute="top" constant="424" id="XAX-VX-msE"/>
+                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="leading" secondItem="rvt-6R-LAe" secondAttribute="leading" id="YED-Ha-pul"/>
+                                    <constraint firstItem="O0M-3L-WnQ" firstAttribute="top" secondItem="rvt-6R-LAe" secondAttribute="top" id="Yuv-Bf-fzS"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="top" secondItem="7hw-It-HH5" secondAttribute="bottom" constant="8" symbolic="YES" id="aj0-7n-SdX"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="leading" secondItem="rvt-6R-LAe" secondAttribute="leadingMargin" id="b9f-4I-zhG"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="trailing" secondItem="7hw-It-HH5" secondAttribute="trailing" id="gPc-3T-N0K"/>
+                                    <constraint firstItem="5Z3-hB-wRg" firstAttribute="bottom" secondItem="rvt-6R-LAe" secondAttribute="bottomMargin" id="ijz-1w-LTq"/>
+                                    <constraint firstItem="7hw-It-HH5" firstAttribute="centerX" secondItem="rvt-6R-LAe" secondAttribute="centerX" id="j4F-B7-neN"/>
+                                    <constraint firstItem="7hw-It-HH5" firstAttribute="top" secondItem="O0M-3L-WnQ" secondAttribute="bottom" constant="1" id="qBo-PN-c78"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qBo-PN-c78"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rvt-6R-LAe" firstAttribute="leading" secondItem="vxV-BV-nud" secondAttribute="leadingMargin" id="6XS-vO-zaz"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="rvt-6R-LAe" secondAttribute="bottom" constant="36" id="HMh-JA-Qcp"/>
-                            <constraint firstAttribute="centerX" secondItem="rvt-6R-LAe" secondAttribute="centerX" id="Pfd-vz-Vew"/>
-                            <constraint firstItem="rvt-6R-LAe" firstAttribute="leading" secondItem="WPA-rh-zK5" secondAttribute="trailing" constant="-584" id="vDv-3Z-hqE"/>
-                            <constraint firstItem="rvt-6R-LAe" firstAttribute="top" secondItem="WPA-rh-zK5" secondAttribute="bottom" constant="-44" id="zjb-1K-7qp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rvt-6R-LAe" secondAttribute="bottom" constant="36" id="9pP-YO-YFX"/>
+                            <constraint firstItem="rvt-6R-LAe" firstAttribute="leading" secondItem="vxV-BV-nud" secondAttribute="leadingMargin" id="BWY-bm-ypU"/>
+                            <constraint firstItem="rvt-6R-LAe" firstAttribute="top" secondItem="vxV-BV-nud" secondAttribute="top" id="ags-g1-wEq"/>
+                            <constraint firstItem="rvt-6R-LAe" firstAttribute="trailing" secondItem="vxV-BV-nud" secondAttribute="trailingMargin" id="xcv-eh-Peb"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsA-3q-PMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3165" y="2560"/>
+            <point key="canvasLocation" x="4737" y="2668"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="okY-uc-TMN">
@@ -537,7 +489,7 @@ Wristband is valid for day of purchase only.</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnA-ew-aZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="2560"/>
+            <point key="canvasLocation" x="3186" y="2668"/>
         </scene>
         <!--Breweries-->
         <scene sceneID="eOM-e4-ID0">
@@ -570,12 +522,146 @@ Wristband is valid for day of purchase only.</mutableString>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="emb-dv-nKx" kind="relationship" relationship="rootViewController" id="qaT-fv-JWL"/>
+                        <segue destination="cUc-E6-AO5" kind="relationship" relationship="rootViewController" id="KIp-0A-qAQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qh-5z-DDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3587" y="1909"/>
+            <point key="canvasLocation" x="3215" y="1905"/>
+        </scene>
+        <!--Tours-->
+        <scene sceneID="8em-8u-Zwz">
+            <objects>
+                <viewController id="cUc-E6-AO5" customClass="ToursUIViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GH6-pb-uNX"/>
+                        <viewControllerLayoutGuide type="bottom" id="iE7-1L-rSH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x87-VY-wwa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SUU-14-HT0">
+                                <rect key="frame" x="16" y="20" width="568" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToursCell" id="o3M-73-bq4">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3M-73-bq4" id="QJh-h9-fCW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="b1d-WY-gRr" kind="show" id="Ucw-Jc-xUz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SUU-14-HT0" firstAttribute="top" secondItem="x87-VY-wwa" secondAttribute="top" constant="20" symbolic="YES" id="FB7-Ai-wF5"/>
+                            <constraint firstItem="SUU-14-HT0" firstAttribute="leading" secondItem="x87-VY-wwa" secondAttribute="leadingMargin" id="Gsp-BN-QwX"/>
+                            <constraint firstItem="SUU-14-HT0" firstAttribute="bottom" secondItem="iE7-1L-rSH" secondAttribute="top" id="UnY-Op-RDj"/>
+                            <constraint firstItem="SUU-14-HT0" firstAttribute="trailing" secondItem="x87-VY-wwa" secondAttribute="trailingMargin" id="xQq-nI-Al0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tours" id="sbz-FL-08C"/>
+                    <connections>
+                        <outlet property="tableView" destination="SUU-14-HT0" id="b48-38-WDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoK-V6-iLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4029" y="1931"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Scc-Zq-5cy">
+            <objects>
+                <viewController id="b1d-WY-gRr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eGN-eR-Tmb"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFG-OH-NPo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Qa-cr-BOU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-gV-Eg2">
+                                <rect key="frame" x="16" y="0.0" width="568" height="543"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerglasses.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="szk-fY-th0">
+                                        <rect key="frame" x="8" y="8" width="245" height="198"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="198" id="AaH-7N-u2l"/>
+                                            <constraint firstAttribute="width" constant="245" id="Ka0-LZ-rTl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
+                                        <rect key="frame" x="4" y="205" width="560" height="330"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="19l-c9-wLe"/>
+                                            <constraint firstAttribute="height" constant="330" id="4LY-pi-54X"/>
+                                            <constraint firstAttribute="height" constant="312" id="msO-Zx-bOA"/>
+                                        </constraints>
+                                        <string key="text">DATE &amp; TIME:
+
+May 15, 2015 to September 20, 2015
+7 days a week
+Pub Crawls start:  10am - 5:30pm (call us to get a time slot)
+Ferries run 10am - 9pm 
+PRICE:   
+
+Thursday, Friday &amp; Saturday - $20 per wristband
+25% off Sunday to Wednesday - $15 per wristband - It's not as busy and it's cheaper!!!
+IMPORTANT INFORMATION:
+
+There are limited tickets - so purchase your tickets early - we do sell out!  Call 250-708-0201 to buy your tickets (sorry, no refunds).  First come first served!! 
+If you are trying to get tickets for the day of...head down to the Steamship Terminal Kiosk and cross your fingers that there are still tickets left!  
+Once your tickets have been purchased, they will be waiting for you at the Steamship Terminal kiosk on the day of your pub crawl.
+All Pickle Pub Crawls start at the Steamship Terminal on or before 5:30pm.
+Tickets can be scanned 4 times to allow for 4 ferry hops. Please hold on to your ticket as you will need it to get on the ferry each time.
+Pickle Pub Crawl wristbands DO NOT guarantee you a seat in the pubs. You will have to wait to be seated at all the venues like everyone else. If this is a problem, please feel free to call the venues to give them a heads up.
+Wait times for ferries and restaurants can sometimes be more than 30 minutes.
+Every group of 4 receives one free appetizer with drink purchase.  If you have 4 people, you get 1 appetizer...if you have 8 people, you get 2 appetizers...if you have 10 people, you still only get 2 appetizers.  
+You must be 19 years or over.
+One restaurant bill per group.
+Wristband is valid for day of purchase only.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="19l-c9-wLe"/>
+                                                <exclude reference="msO-Zx-bOA"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="centerX" secondItem="Dq4-gV-Eg2" secondAttribute="centerX" id="56o-v5-iH4"/>
+                                    <constraint firstItem="szk-fY-th0" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="topMargin" id="bfd-UX-Rwt"/>
+                                    <constraint firstAttribute="bottom" secondItem="szk-fY-th0" secondAttribute="bottom" constant="337" id="fQC-A3-VUz"/>
+                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="leading" secondItem="Dq4-gV-Eg2" secondAttribute="leading" constant="4" id="hAv-AL-2iM"/>
+                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="bottom" secondItem="Dq4-gV-Eg2" secondAttribute="bottomMargin" id="pz2-44-JEf"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ld-6u-z2f" secondAttribute="trailing" constant="4" id="wIc-BB-9Xk"/>
+                                    <constraint firstItem="szk-fY-th0" firstAttribute="leading" secondItem="Dq4-gV-Eg2" secondAttribute="leading" constant="8" id="zqK-HI-4QA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" id="0jG-jo-5gM"/>
+                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="trailing" secondItem="9Qa-cr-BOU" secondAttribute="trailingMargin" id="BX8-bF-zlz"/>
+                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="top" secondItem="9Qa-cr-BOU" secondAttribute="top" id="Tzu-uR-Lfi"/>
+                            <constraint firstItem="VFG-OH-NPo" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="bottom" constant="8" symbolic="YES" id="oVa-yX-GCX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVm-Z8-EO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4758" y="1931"/>
         </scene>
     </scenes>
     <resources>

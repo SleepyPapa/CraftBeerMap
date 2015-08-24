@@ -16,6 +16,7 @@ class TapHousesUIViewController: UIViewController, UITableViewDataSource, UITabl
     
     let textCellIdentifier = "TapHouseCell"
     let arrayTapHouses = ["Yates Street Tap House", "Bard and Banker", "Irish Times"]
+    let arrayDescription = ["Yates Street Tap House", "Bard and Banker", "Irish Times"]
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -46,7 +47,15 @@ class TapHousesUIViewController: UIViewController, UITableViewDataSource, UITabl
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "segueTapHouse") {
+            var svc = segue.destinationViewController as! TapHouseDetailViewController;
+            if let currentIndex  = tableView.indexPathForSelectedRow()?.row {
+                svc.tapHouseName = arrayTapHouses[currentIndex]
+                svc.tapHouseDescription = arrayDescription[currentIndex]
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
