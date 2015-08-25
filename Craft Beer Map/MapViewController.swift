@@ -44,8 +44,21 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         
         // 6
         centerScrollViewContents()
+   }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.center.x  -= view.bounds.width
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animateWithDuration(1.0, animations: {
+            self.imageView.center.x += self.view.bounds.width
+        })
+        
+    }
     
     func centerScrollViewContents() {
         let boundsSize = scrollView.bounds.size
