@@ -81,7 +81,7 @@ class BreweriesUIViewController: UIViewController, UITableViewDataSource, UITabl
             brewerLocation: "2010 Goverment St, Victoria, BC.\n\n250.386.2739\n\nhttp://phillipsbeer.com")
         brewersData.append(brewerName: "Vancouver Island Brewery",
             brewerDescription: "A longtime Island favourite, VIB was originally founded as Island Pacific Brewing in 1984. Look for popular brands like Piper's Pale Ale and Hermann's Dark Lager throughout Greater Victoria.",
-            brewerLocation: "Street, Victoria, BC.\n\n250.361.0005\n\nhttp://vanislandbrewery.com")
+            brewerLocation: "2330 Government Street, Victoria, BC.\n\n250.361.0005\n\nhttp://vanislandbrewery.com")
         brewersData.sort({$0.0<$1.0})
         
     }

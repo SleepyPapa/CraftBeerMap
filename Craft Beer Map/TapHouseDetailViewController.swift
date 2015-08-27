@@ -9,17 +9,21 @@
 import UIKit
 
 class TapHouseDetailViewController: UIViewController {
+    var tapHouseName: String!
+    var tapHouseLocation: String!
+    var tapHouseDescription: String!
+    var tapHouseImage: String!
 
-    var tapHouseName :String!
-    var tapHouseDescription :String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         var textViewToUpdate = self.view.viewWithTag(30) as! UITextView
-        textViewToUpdate.text = tapHouseName
+        textViewToUpdate.text = tapHouseLocation
         var secondTextViewToUpdate = self.view.viewWithTag(31) as! UITextView
         secondTextViewToUpdate.text = tapHouseDescription
-
+        var imageViewToUpdate = self.view.viewWithTag(32) as! UIImageView
+        var image : UIImage = UIImage(named: tapHouseImage)!
+        imageViewToUpdate.image = image
 
         // Do any additional setup after loading the view.
     }

@@ -106,7 +106,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFd-b6-hPq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
+                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
                                         <rect key="frame" x="8" y="20" width="584" height="244"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="244" id="jwz-kM-qrj"/>
@@ -128,7 +128,7 @@
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="20" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP7-io-50B">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="20" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SP7-io-50B">
                                         <rect key="frame" x="8" y="272" width="584" height="108"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -357,7 +357,7 @@ info@phillipsbeer.com
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-6R-LAe">
                                 <rect key="frame" x="16" y="0.0" width="568" height="564"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
+                                    <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="297"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O0M-3L-WnQ" secondAttribute="height" multiplier="568:297" id="l7w-ex-Flt"/>
@@ -552,7 +552,7 @@ info@phillipsbeer.com
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="b1d-WY-gRr" kind="show" id="Ucw-Jc-xUz"/>
+                                            <segue destination="b1d-WY-gRr" kind="show" identifier="segueTours" id="Ucw-Jc-xUz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -575,10 +575,10 @@ info@phillipsbeer.com
             </objects>
             <point key="canvasLocation" x="4029" y="1931"/>
         </scene>
-        <!--View Controller-->
+        <!--Tours Detail View Controller-->
         <scene sceneID="Scc-Zq-5cy">
             <objects>
-                <viewController id="b1d-WY-gRr" sceneMemberID="viewController">
+                <viewController id="b1d-WY-gRr" customClass="ToursDetailViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eGN-eR-Tmb"/>
                         <viewControllerLayoutGuide type="bottom" id="VFG-OH-NPo"/>
@@ -597,7 +597,7 @@ info@phillipsbeer.com
                                             <constraint firstAttribute="width" constant="245" id="Ka0-LZ-rTl"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
                                         <rect key="frame" x="4" y="205" width="560" height="330"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -605,29 +605,6 @@ info@phillipsbeer.com
                                             <constraint firstAttribute="height" constant="330" id="4LY-pi-54X"/>
                                             <constraint firstAttribute="height" constant="312" id="msO-Zx-bOA"/>
                                         </constraints>
-                                        <string key="text">DATE &amp; TIME:
-
-May 15, 2015 to September 20, 2015
-7 days a week
-Pub Crawls start:  10am - 5:30pm (call us to get a time slot)
-Ferries run 10am - 9pm 
-PRICE:   
-
-Thursday, Friday &amp; Saturday - $20 per wristband
-25% off Sunday to Wednesday - $15 per wristband - It's not as busy and it's cheaper!!!
-IMPORTANT INFORMATION:
-
-There are limited tickets - so purchase your tickets early - we do sell out!  Call 250-708-0201 to buy your tickets (sorry, no refunds).  First come first served!! 
-If you are trying to get tickets for the day of...head down to the Steamship Terminal Kiosk and cross your fingers that there are still tickets left!  
-Once your tickets have been purchased, they will be waiting for you at the Steamship Terminal kiosk on the day of your pub crawl.
-All Pickle Pub Crawls start at the Steamship Terminal on or before 5:30pm.
-Tickets can be scanned 4 times to allow for 4 ferry hops. Please hold on to your ticket as you will need it to get on the ferry each time.
-Pickle Pub Crawl wristbands DO NOT guarantee you a seat in the pubs. You will have to wait to be seated at all the venues like everyone else. If this is a problem, please feel free to call the venues to give them a heads up.
-Wait times for ferries and restaurants can sometimes be more than 30 minutes.
-Every group of 4 receives one free appetizer with drink purchase.  If you have 4 people, you get 1 appetizer...if you have 8 people, you get 2 appetizers...if you have 10 people, you still only get 2 appetizers.  
-You must be 19 years or over.
-One restaurant bill per group.
-Wristband is valid for day of purchase only.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
