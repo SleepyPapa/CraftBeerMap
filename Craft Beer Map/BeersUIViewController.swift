@@ -14,8 +14,12 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableView: UITableView!
     let textCellIdentifier = "BeersCell"
     let arrayBeers = ["Blue Buck", "Sea Dog", "Amber Ale"]
-    let arrayBrewer = ["Phillips Brewing Company\n2010 Government Street\nVictoria, BC V8T 4PI\n info@phillipsbeer.com\n(250)380-1912", "Vancouver Island BreweryPhillips Brewing Company\n100 Any Street\nVictoria, BC V8T 4PI\n info@vancouverislandbeer.com\n(250)380-1111", "Hoynes"]
-    let arrayDescriptions = ["Blue Buck, some background text about the taste of the beer and anything else from the website.", "Sea Dog", "Amber Ale"]
+    let arrayBrewer = ["Phillips Brewing Company\n2010 Government Street\nVictoria, BC V8T 4PI\n info@phillipsbeer.com\n(250)380-1912",
+        "Vancouver Island Brewery",
+        "Hoynes"]
+    let arrayDescriptions = ["Blue Buck, some background text about the taste of the beer and anything else from the website.",
+        "Sea Dog",
+        "Amber Ale"]
     var beers = [NSManagedObject] ()
     
     

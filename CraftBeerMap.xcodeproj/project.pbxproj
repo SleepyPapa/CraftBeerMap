@@ -12,9 +12,6 @@
 		109C6AB81B7A805100C955B4 /* CraftBeerMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */; };
 		109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */; };
 		109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */; };
-		109C6ABE1B7AA5CD00C955B4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABD1B7AA5CD00C955B4 /* Beer.swift */; };
-		109C6AC01B7AA5CD00C955B4 /* Taphouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABF1B7AA5CD00C955B4 /* Taphouse.swift */; };
-		109C6AC21B7AA5CD00C955B4 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AC11B7AA5CD00C955B4 /* Tour.swift */; };
 		10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */; };
 		10EE6DEF1B6FE341007A8659 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEE1B6FE341007A8659 /* MapViewController.swift */; };
 		10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF01B6FE341007A8659 /* Main.storyboard */; };
@@ -26,7 +23,6 @@
 		10EE6E111B6FE951007A8659 /* TapHousesUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */; };
 		10EE6E131B6FE961007A8659 /* BreweriesUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */; };
 		10EE6E151B6FE96F007A8659 /* ToursUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */; };
-		10EE6E171B6FEB80007A8659 /* Beers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E161B6FEB80007A8659 /* Beers.swift */; };
 		10EE6E191B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */; };
 		10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */; };
 		10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E201B70049F007A8659 /* 1438650995_beer.png */; };
@@ -61,9 +57,6 @@
 		109C6AB71B7A805100C955B4 /* CraftBeerMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftBeerMap.xcdatamodel; sourceTree = "<group>"; };
 		109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-mapLarge.jpg"; sourceTree = "<group>"; };
 		109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brewer.swift; path = ../Brewer.swift; sourceTree = "<group>"; };
-		109C6ABD1B7AA5CD00C955B4 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beer.swift; path = ../Beer.swift; sourceTree = "<group>"; };
-		109C6ABF1B7AA5CD00C955B4 /* Taphouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Taphouse.swift; path = ../Taphouse.swift; sourceTree = "<group>"; };
-		109C6AC11B7AA5CD00C955B4 /* Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tour.swift; path = ../Tour.swift; sourceTree = "<group>"; };
 		10EE6DE71B6FE341007A8659 /* CraftBeerMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftBeerMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EE6DEB1B6FE341007A8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +72,6 @@
 		10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHousesUIViewController.swift; sourceTree = "<group>"; };
 		10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweriesUIViewController.swift; sourceTree = "<group>"; };
 		10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursUIViewController.swift; sourceTree = "<group>"; };
-		10EE6E161B6FEB80007A8659 /* Beers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beers.swift; sourceTree = "<group>"; };
 		10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blue-Buck-Poster-full-size-2.jpg"; sourceTree = "<group>"; };
 		10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		10EE6E201B70049F007A8659 /* 1438650995_beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1438650995_beer.png; sourceTree = "<group>"; };
@@ -138,9 +130,6 @@
 		10EE6DE91B6FE341007A8659 /* CraftBeerMap */ = {
 			isa = PBXGroup;
 			children = (
-				109C6AC11B7AA5CD00C955B4 /* Tour.swift */,
-				109C6ABF1B7AA5CD00C955B4 /* Taphouse.swift */,
-				109C6ABD1B7AA5CD00C955B4 /* Beer.swift */,
 				109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */,
 				10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */,
 				10EE6DEE1B6FE341007A8659 /* MapViewController.swift */,
@@ -149,7 +138,6 @@
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
 				10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */,
 				16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */,
-				10EE6E161B6FEB80007A8659 /* Beers.swift */,
 				10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */,
 				0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */,
 				10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */,
@@ -323,18 +311,14 @@
 			files = (
 				109C6AB81B7A805100C955B4 /* CraftBeerMap.xcdatamodeld in Sources */,
 				10EE6DEF1B6FE341007A8659 /* MapViewController.swift in Sources */,
-				109C6AC01B7AA5CD00C955B4 /* Taphouse.swift in Sources */,
 				109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */,
-				109C6ABE1B7AA5CD00C955B4 /* Beer.swift in Sources */,
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
 				10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */,
 				10EE6E131B6FE961007A8659 /* BreweriesUIViewController.swift in Sources */,
-				10EE6E171B6FEB80007A8659 /* Beers.swift in Sources */,
 				16C71D711B828C1600B75418 /* BrewerDetailViewController.swift in Sources */,
 				10EE6E151B6FE96F007A8659 /* ToursUIViewController.swift in Sources */,
-				109C6AC21B7AA5CD00C955B4 /* Tour.swift in Sources */,
 				10EE6E111B6FE951007A8659 /* TapHousesUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
