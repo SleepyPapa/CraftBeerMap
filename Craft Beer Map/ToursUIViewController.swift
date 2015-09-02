@@ -56,6 +56,7 @@ class ToursUIViewController: UIViewController, UITableViewDataSource, UITableVie
             var svc = segue.destinationViewController as! ToursDetailViewController;
             if let currentIndex  = tableView.indexPathForSelectedRow()?.row {
                 svc.toursInformation = toursData[currentIndex].toursInformation
+                svc.toursLocation = toursData[currentIndex].toursLocation
             }
         }
     }

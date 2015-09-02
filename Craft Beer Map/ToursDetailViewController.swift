@@ -11,13 +11,14 @@ import UIKit
 class ToursDetailViewController: UIViewController {
 
     var toursInformation: String!
+    var toursLocation: String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var textViewToUpdate = self.view.viewWithTag(40) as! UITextView
-        textViewToUpdate.text = toursInformation
+        textViewToUpdate.text = toursInformation + "\n" + toursLocation
 
         // Do any additional setup after loading the view.
     }

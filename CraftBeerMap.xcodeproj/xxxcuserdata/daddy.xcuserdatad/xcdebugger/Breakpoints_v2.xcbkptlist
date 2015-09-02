@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Craft Beer Map/BreweriesUIViewController.swift"
+            timestampString = "462403118.193552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Craft Beer Map/BreweriesUIViewController.swift"
+            timestampString = "462403118.193552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "setUpTuples()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CraftBeerMap.BreweriesUIViewController.setUpTuples (CraftBeerMap.BreweriesUIViewController)() -&gt; ()"
+                  moduleName = "CraftBeerMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daddy/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Craft%20Beer%20Map/Craft%20Beer%20Map/BreweriesUIViewController.swift"
+                  timestampString = "462396437.924442"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "3436">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CraftBeerMap.BreweriesUIViewController.(setUpTuples (CraftBeerMap.BreweriesUIViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "CraftBeerMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daddy/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Craft%20Beer%20Map/Craft%20Beer%20Map/BreweriesUIViewController.swift"
+                  timestampString = "462396437.924677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "138"
+                  endingLineNumber = "138"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
