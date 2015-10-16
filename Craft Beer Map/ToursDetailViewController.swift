@@ -17,7 +17,7 @@ class ToursDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var textViewToUpdate = self.view.viewWithTag(40) as! UITextView
+        let textViewToUpdate = self.view.viewWithTag(40) as! UITextView
         textViewToUpdate.text = toursInformation + "\n" + toursLocation
 
         // Do any additional setup after loading the view.

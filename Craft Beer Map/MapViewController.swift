@@ -16,8 +16,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let image = UIImage(named: "square_map.png")!
+
+        let image = UIImage(named: "craft-beer-mapLarge.jpg")!
+//        let image = UIImage(named: "square_map.png")!
         imageView = UIImageView(image: image)
         imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size:image.size)
         scrollView.addSubview(imageView)
@@ -26,7 +27,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = image.size
         
         // 3
-        var doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewDoubleTapped:")
+        let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewDoubleTapped:")
         doubleTapRecognizer.numberOfTapsRequired = 2
         doubleTapRecognizer.numberOfTouchesRequired = 1
         scrollView.addGestureRecognizer(doubleTapRecognizer)

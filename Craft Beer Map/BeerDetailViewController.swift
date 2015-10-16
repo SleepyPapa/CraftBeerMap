@@ -18,15 +18,15 @@ class BeerDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var textViewToUpdate = self.view.viewWithTag(20) as! UITextView
+        let textViewToUpdate = self.view.viewWithTag(20) as! UITextView
         textViewToUpdate.text = beerBrewer
-        var secondTextViewToUpdate = self.view.viewWithTag(21) as! UITextView
+        let secondTextViewToUpdate = self.view.viewWithTag(21) as! UITextView
         secondTextViewToUpdate.text = beerDescription
-        var imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
+        let imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
         
-        var image : UIImage = UIImage(named: beerImage)!
+        let image : UIImage = UIImage(named: "phillips.png")!
         imageViewToUpdate.image = image
-
+        
         // Do any additional setup after loading the view.
     }
 

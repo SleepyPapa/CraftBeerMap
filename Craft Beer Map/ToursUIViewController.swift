@@ -18,7 +18,7 @@ class ToursUIViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) 
         let row = indexPath.row
         cell.textLabel?.text = toursData[row].toursName
         return cell
@@ -40,21 +40,21 @@ class ToursUIViewController: UIViewController, UITableViewDataSource, UITableVie
         // Do any additional setup after loading the view.
     }
     func setUpTuples(){
-        toursData.append(toursName: "Pickle Tours",
+        toursData.append((toursName: "Pickle Tours",
             toursLocation: "Pickle Tours",
-            toursInformation: "http://www.victoriaharbourferry.com/tours-services/pickle-pub-crawls")
-        toursData.append(toursName: "Pub Crawlers",
+            toursInformation: "http://www.victoriaharbourferry.com/tours-services/pickle-pub-crawls"))
+        toursData.append((toursName: "Pub Crawlers",
             toursLocation: "Pub Crawlers",
-            toursInformation: "http://PubCrawlers.com")
-        toursData.append(toursName: "Evening Out",
+            toursInformation: "http://PubCrawlers.com"))
+        toursData.append((toursName: "Evening Out",
             toursLocation: "Evening Out",
-            toursInformation: "http://eveningout.ca")
+            toursInformation: "http://eveningout.ca"))
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "segueTours") {
-            var svc = segue.destinationViewController as! ToursDetailViewController;
-            if let currentIndex  = tableView.indexPathForSelectedRow()?.row {
+            let svc = segue.destinationViewController as! ToursDetailViewController;
+            if let currentIndex  = tableView.indexPathForSelectedRow?.row {
                 svc.toursInformation = toursData[currentIndex].toursInformation
                 svc.toursLocation = toursData[currentIndex].toursLocation
             }

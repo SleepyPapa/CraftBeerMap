@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F8790501B8B84A6000E13B1 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F87904F1B8B84A6000E13B1 /* square_map.png */; };
+		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; settings = {ASSET_TAGS = (); }; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
+		0FBCCC991BC6EE7C00798764 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBCCC981BC6EE7C00798764 /* CloudKit.framework */; };
 		109C6AB81B7A805100C955B4 /* CraftBeerMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */; };
 		109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */; };
 		109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */; };
@@ -41,9 +42,7 @@
 		10EE6E331B7015E6007A8659 /* barnstormer.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E321B7015E6007A8659 /* barnstormer.png */; };
 		10EE6E351B702058007A8659 /* craft-beer-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E341B702058007A8659 /* craft-beer-map.jpg */; };
 		10EE6E391B7028BE007A8659 /* craft-beer-map_rotated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */; };
-		16213FAB1B8253F000650974 /* beerglasses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16213FAA1B8253F000650974 /* beerglasses.jpg */; };
 		167F71141B82459C00DAC9C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167F71131B82459C00DAC9C6 /* Default-568h@2x.png */; };
-		16C71D6F1B828B8F00B75418 /* Hermanns-old-6-pack-400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16C71D6E1B828B8F00B75418 /* Hermanns-old-6-pack-400.jpg */; };
 		16C71D711B828C1600B75418 /* BrewerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F87904F1B8B84A6000E13B1 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square_map.png; path = "../../../../com~apple~Preview/Documents/square_map.png"; sourceTree = "<group>"; };
+		0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beerdata.csv; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
+		0FBCCC971BC6EE6B00798764 /* CraftBeerMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CraftBeerMap.entitlements; sourceTree = SOURCE_ROOT; };
+		0FBCCC981BC6EE7C00798764 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		109C6AB71B7A805100C955B4 /* CraftBeerMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftBeerMap.xcdatamodel; sourceTree = "<group>"; };
 		109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-mapLarge.jpg"; sourceTree = "<group>"; };
 		109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brewer.swift; path = ../Brewer.swift; sourceTree = "<group>"; };
@@ -96,10 +97,9 @@
 		10EE6E321B7015E6007A8659 /* barnstormer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barnstormer.png; sourceTree = "<group>"; };
 		10EE6E341B702058007A8659 /* craft-beer-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-map.jpg"; sourceTree = "<group>"; };
 		10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-map_rotated.jpg"; sourceTree = "<group>"; };
-		16213FAA1B8253F000650974 /* beerglasses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beerglasses.jpg; path = ../../../beerglasses.jpg; sourceTree = "<group>"; };
 		167F71131B82459C00DAC9C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		16C71D6E1B828B8F00B75418 /* Hermanns-old-6-pack-400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Hermanns-old-6-pack-400.jpg"; path = "../../../Hermanns-old-6-pack-400.jpg"; sourceTree = "<group>"; };
 		16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewerDetailViewController.swift; sourceTree = "<group>"; };
+		5F268A454F949365E2654AF7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBCCC991BC6EE7C00798764 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,10 +124,12 @@
 		10EE6DDE1B6FE341007A8659 = {
 			isa = PBXGroup;
 			children = (
+				0FBCCC981BC6EE7C00798764 /* CloudKit.framework */,
 				167F71131B82459C00DAC9C6 /* Default-568h@2x.png */,
 				10EE6DE91B6FE341007A8659 /* CraftBeerMap */,
 				10EE6DFF1B6FE341007A8659 /* CraftBeerMapTests */,
 				10EE6DE81B6FE341007A8659 /* Products */,
+				DFAF6FD0C5C1C9CC12E5C97E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +145,7 @@
 		10EE6DE91B6FE341007A8659 /* CraftBeerMap */ = {
 			isa = PBXGroup;
 			children = (
+				0FBCCC971BC6EE6B00798764 /* CraftBeerMap.entitlements */,
 				109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */,
 				10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */,
 				10EE6DEE1B6FE341007A8659 /* MapViewController.swift */,
@@ -154,8 +158,8 @@
 				0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */,
 				10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */,
 				0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */,
-				16C71D6E1B828B8F00B75418 /* Hermanns-old-6-pack-400.jpg */,
 				109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */,
+				0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */,
 				10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */,
 				10ECECD71B979FA2008F6114 /* irishtimes.png */,
 				10ECECD91B979FB0008F6114 /* VIB.png */,
@@ -169,12 +173,10 @@
 				10EE6E2E1B700701007A8659 /* 1438651851_beer.png */,
 				10EE6E201B70049F007A8659 /* 1438650995_beer.png */,
 				10EE6E2C1B7006BD007A8659 /* 1438651783_walking.png */,
-				16213FAA1B8253F000650974 /* beerglasses.jpg */,
 				10EE6E321B7015E6007A8659 /* barnstormer.png */,
 				10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */,
 				10EE6E301B700DAB007A8659 /* taphouse2.jpg */,
 				109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */,
-				0F87904F1B8B84A6000E13B1 /* square_map.png */,
 				10EE6E341B702058007A8659 /* craft-beer-map.jpg */,
 				10EE6DF31B6FE341007A8659 /* Images.xcassets */,
 				10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */,
@@ -208,6 +210,14 @@
 				10EE6E011B6FE341007A8659 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFAF6FD0C5C1C9CC12E5C97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F268A454F949365E2654AF7 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,12 +264,19 @@
 		10EE6DDF1B6FE341007A8659 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gregory Lavery";
 				TargetAttributes = {
 					10EE6DE61B6FE341007A8659 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = AK2R4KC4GV;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					10EE6DFB1B6FE341007A8659 = {
 						CreatedOnToolsVersion = 6.4;
@@ -294,7 +311,6 @@
 				10EE6E191B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg in Resources */,
 				10ECECDC1B979FB9008F6114 /* canoe.png in Resources */,
 				10ECECDE1B979FC2008F6114 /* phillips.png in Resources */,
-				16213FAB1B8253F000650974 /* beerglasses.jpg in Resources */,
 				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
 				10EE6E2B1B700641007A8659 /* 1438651657_factory.png in Resources */,
 				10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */,
@@ -308,13 +324,12 @@
 				10EE6E311B700DAB007A8659 /* taphouse2.jpg in Resources */,
 				10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */,
 				10EE6E2D1B7006BD007A8659 /* 1438651783_walking.png in Resources */,
+				0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */,
 				10ECECDA1B979FB0008F6114 /* VIB.png in Resources */,
-				0F8790501B8B84A6000E13B1 /* square_map.png in Resources */,
 				10EE6E271B700586007A8659 /* 1438651466_location-24.png in Resources */,
 				10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */,
 				10ECECE01B979FC8008F6114 /* bard.png in Resources */,
 				10EE6E331B7015E6007A8659 /* barnstormer.png in Resources */,
-				16C71D6F1B828B8F00B75418 /* Hermanns-old-6-pack-400.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +421,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -472,11 +488,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CraftBeerMap.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Craft Beer Map/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregorylavery.beermap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -486,11 +505,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CraftBeerMap.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Craft Beer Map/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregorylavery.beermap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -509,6 +531,7 @@
 				);
 				INFOPLIST_FILE = "Craft Beer MapTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregorylavery.beermap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -522,6 +545,7 @@
 				);
 				INFOPLIST_FILE = "Craft Beer MapTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregorylavery.beermap.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

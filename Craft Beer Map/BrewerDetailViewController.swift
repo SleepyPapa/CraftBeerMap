@@ -17,9 +17,9 @@ class BrewerDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var textViewToUpdate = self.view.viewWithTag(12) as! UITextView
+        let textViewToUpdate = self.view.viewWithTag(12) as! UITextView
         textViewToUpdate.text = brewerDetails
-        var secondTextViewToUpdate = self.view.viewWithTag(11) as! UITextView
+        let secondTextViewToUpdate = self.view.viewWithTag(11) as! UITextView
         secondTextViewToUpdate.text = brewerDescription
     }
 
