@@ -15,45 +15,39 @@ import CloudKit
     func modelUpdated()
 }*/
 
-class BeersUIViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-    
+class BeersUIViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
+
+    @IBOutlet weak var searchbar: UISearchBar!
     let container = CKContainer.defaultContainer()
     var publicDB: CKDatabase?
     var currentRecord: CKRecord?
+    var searchActive : Bool = false
     
     @IBOutlet weak var tableView: UITableView!
     let textCellIdentifier = "BeersCell"
     var beersData:[(beerName: String, beerBrewer: String, beerDescription: String, beerImage: String)] = []
     var beersData2:[(beerName: String, beerBrewer: String, beerNotes: String, beerABV: String,beerImage:String, beerReviewDate: String, beerType: String)] = []
+    var filteredData:[(beerName: String, beerBrewer: String, beerNotes: String, beerABV: String,beerImage:String, beerReviewDate: String, beerType: String)] = []
+
     
-    /*
-    let arrayBeers = ["Blue Buck", "Sea Dog", "Amber Ale"]
-    let arrayBrewer = ["Phillips Brewing Company\n2010 Government Street\nVictoria, BC V8T 4PI\n info@phillipsbeer.com\n(250)380-1912",
-    "Vancouver Island Brewery",
-    "Hoynes"]
-    let arrayDescriptions = ["Blue Buck, some background text about the taste of the beer and anything else from the website.",
-    "Sea Dog",
-    "Amber Ale"]
-    var beers = [NSManagedObject] ()
-    
-    init() {
-    super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-    }
-    */
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier)
+        if(searchActive){
+            cell!.textLabel?.text = filteredData[indexPath.row].beerName
+        } else {
+            cell!.textLabel?.text = beersData2[indexPath.row].beerName
+        }
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath)
-        //        let beer = beers[indexPath.row]
-        //        cell.textLabel!.text = beer.valueForKey("beerName") as? String
-        cell.textLabel!.text = beersData2[indexPath.row].beerName
-        return cell
+ //       let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath)
+ //       cell.textLabel!.text = beersData2[indexPath.row].beerName
+
+        return cell!
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(searchActive) {
+            return filteredData.count
+        }
         return beersData2.count
     }
     
@@ -66,7 +60,10 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
             if let currentIndex  = tableView.indexPathForSelectedRow?.row {
                 svc.beerDescription = beersData2[currentIndex].beerNotes
                 svc.beerBrewer = beersData2[currentIndex].beerBrewer
-                svc.beerImage = beersData2[currentIndex].beerImage
+                svc.beerStyle = beersData2[currentIndex].beerType
+                svc.beerABV = beersData2[currentIndex].beerABV
+                svc.beerReviewDate = beersData2[currentIndex].beerReviewDate
+                svc.beerName = beersData2[currentIndex].beerName
             }
         }
     }
@@ -75,9 +72,45 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        searchbar.delegate = self
         setUpTuples()
     }
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        searchActive = true;
+    }
     
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchActive = false;
+        self.searchbar.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+        self.searchbar.text=""
+        self.searchbar.endEditing(true)
+        self.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchActive = false;
+        self.searchbar.endEditing(true)
+    }
+
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredData = beersData2.filter({ (text) -> Bool in
+            let tmp: NSString = text.beerName
+            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+        if(filteredData.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+            self.tableView.reloadData()
+        }
+    }
     func setUpTuples(){
 
         
@@ -147,7 +180,7 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
         let publicDB = container.publicCloudDatabase
         //        let privateDB = container.privateCloudDatabase
         let beerPredicate = NSPredicate(format: "BeerBrewer BEGINSWITH %@",
-            "Phillips")
+            "")
         // 3
         let query = CKQuery(recordType: "BeerInformation",
             predicate:  beerPredicate)
@@ -178,8 +211,8 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
                         beerReviewDate:tempBeerReviewDate,
                         beerType:tempBeerType))
                 }
+                self.beersData2.sortInPlace({$0.0<$1.0})
                 dispatch_async(dispatch_get_main_queue()) {
-//                                              self.modelUpdated()
                     self.tableView.reloadData()
                     return
                 }

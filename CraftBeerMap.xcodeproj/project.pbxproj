@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; settings = {ASSET_TAGS = (); }; };
+		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; settings = {ASSET_TAGS = (); }; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
 		0FBCCC991BC6EE7C00798764 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBCCC981BC6EE7C00798764 /* CloudKit.framework */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beerdata.csv; sourceTree = "<group>"; };
+		0F6AB47C1BD582370076AFD3 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_map.png; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
 		0FBCCC971BC6EE6B00798764 /* CraftBeerMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CraftBeerMap.entitlements; sourceTree = SOURCE_ROOT; };
@@ -167,6 +169,7 @@
 				10ECECDD1B979FC2008F6114 /* phillips.png */,
 				10ECECDB1B979FB9008F6114 /* canoe.png */,
 				10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */,
+				0F6AB47C1BD582370076AFD3 /* square_map.png */,
 				10EE6E2A1B700641007A8659 /* 1438651657_factory.png */,
 				10EE6E261B700586007A8659 /* 1438651466_location-24.png */,
 				10EE6E281B7005CF007A8659 /* 1438651544_09-house.png */,
@@ -314,6 +317,7 @@
 				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
 				10EE6E2B1B700641007A8659 /* 1438651657_factory.png in Resources */,
 				10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */,
+				0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */,
 				10EE6E2F1B700701007A8659 /* 1438651851_beer.png in Resources */,
 				10EE6E0D1B6FE44E007A8659 /* BeerMap-Cover1.jpg in Resources */,
 				109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */,

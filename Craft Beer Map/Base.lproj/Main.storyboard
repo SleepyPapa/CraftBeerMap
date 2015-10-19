@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hcV-MQ-s9S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hcV-MQ-s9S">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,14 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" maximumZoomScale="3" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-B2-Gnv">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" bounces="NO" maximumZoomScale="3" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-B2-Gnv">
                                 <rect key="frame" x="16" y="20" width="567" height="531"/>
+                                <animations/>
                                 <inset key="scrollIndicatorInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="bzq-6f-03G"/>
                                 </connections>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="P6f-B2-Gnv" secondAttribute="trailing" constant="1" id="3Ry-TQ-cIC"/>
@@ -57,15 +60,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zq3-FU-zRU">
-                                <rect key="frame" x="16" y="20" width="568" height="531"/>
+                                <rect key="frame" x="20" y="20" width="560" height="523"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="LXz-uM-a4m">
+                                    <rect key="frame" x="0.0" y="64" width="560" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeersCell" id="oWj-Fp-5ek">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="130" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oWj-Fp-5ek" id="gso-Nr-0mw">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="Gv0-Hi-hDM" kind="show" identifier="showBeerDetail" id="Omi-EM-Rys"/>
                                         </connections>
@@ -74,20 +87,31 @@
                                 <sections/>
                             </tableView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="bottom" secondItem="mXf-k3-X1K" secondAttribute="top" id="Iyo-Zc-AiS"/>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="top" secondItem="5y0-yD-sDl" secondAttribute="top" constant="20" symbolic="YES" id="ai7-3I-y57"/>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="leading" secondItem="5y0-yD-sDl" secondAttribute="leadingMargin" id="cQx-Cg-PuA"/>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="trailing" secondItem="5y0-yD-sDl" secondAttribute="trailingMargin" id="egU-tA-024"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="trailing" secondItem="5y0-yD-sDl" secondAttribute="trailingMargin" id="2Kr-fx-DQH"/>
+                            <constraint firstItem="mXf-k3-X1K" firstAttribute="top" secondItem="Zq3-FU-zRU" secondAttribute="bottom" constant="8" symbolic="YES" id="OFM-L0-z2Z"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="leading" secondItem="5y0-yD-sDl" secondAttribute="leadingMargin" id="Zee-tJ-cD4"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="top" secondItem="5y0-yD-sDl" secondAttribute="top" constant="20" symbolic="YES" id="gtE-bj-9hv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Beers" id="6lU-Ws-W1w"/>
                     <connections>
+                        <outlet property="searchDisplayController" destination="xzO-5v-0KA" id="6CG-qz-NQ2"/>
+                        <outlet property="searchbar" destination="LXz-uM-a4m" id="OwA-g1-Qw1"/>
                         <outlet property="tableView" destination="Zq3-FU-zRU" id="TRe-Ke-a50"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNM-g6-H50" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="xzO-5v-0KA">
+                    <connections>
+                        <outlet property="delegate" destination="8gi-xk-vrz" id="gtJ-RB-ZmQ"/>
+                        <outlet property="searchContentsController" destination="8gi-xk-vrz" id="ubj-we-pRv"/>
+                        <outlet property="searchResultsDataSource" destination="8gi-xk-vrz" id="Rr3-jj-9Ju"/>
+                        <outlet property="searchResultsDelegate" destination="8gi-xk-vrz" id="sk3-la-Xiq"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="4051" y="518"/>
         </scene>
@@ -106,17 +130,12 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFd-b6-hPq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
-                                        <rect key="frame" x="8" y="20" width="584" height="244"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="244" id="jwz-kM-qrj"/>
-                                        </constraints>
-                                    </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="21" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHv-74-I2T">
-                                        <rect key="frame" x="8" y="388" width="584" height="155"/>
+                                        <rect key="frame" x="8" y="212" width="584" height="155"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="155" id="4v5-CW-V5z"/>
+                                            <constraint firstAttribute="height" constant="155" id="id9-QA-VUO"/>
                                             <constraint firstAttribute="height" constant="232" id="ycb-oy-DAf"/>
                                         </constraints>
                                         <string key="text">The Blue Buck is a legendary beast known to grant those that see him good fortune and safe travels! A deep amber coloured beer, the Blue Buck has a crisp finish featuring a delicate hop aroma. Certainly seeing the Blue Buck on bottle grants the drinker a great experience! Worth searching for.</string>
@@ -128,54 +147,143 @@
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="20" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SP7-io-50B">
-                                        <rect key="frame" x="8" y="272" width="584" height="108"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" staticText="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="108" id="As9-nU-YGS"/>
-                                        </constraints>
-                                        <string key="text">Phillips Brewing Company
-2010 Government Street
-Victoria, BC
-V8T 4PI
-info@phillipsbeer.com
-(250)380-1912</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEY-tv-x8c">
+                                        <rect key="frame" x="8" y="87" width="100" height="51"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg0-YE-WSW">
+                                        <rect key="frame" x="8" y="125" width="100" height="51"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-LX-kET">
+                                        <rect key="frame" x="8" y="163" width="100" height="51"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-am-2nF">
+                                        <rect key="frame" x="116" y="60" width="476" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                    </textView>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P3G-wc-0Ms">
+                                        <rect key="frame" x="116" y="98" width="476" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD0-hV-TpE">
+                                        <rect key="frame" x="116" y="136" width="476" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-eZ-bql">
+                                        <rect key="frame" x="116" y="174" width="476" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPz-LB-mbE">
+                                        <rect key="frame" x="8" y="49" width="100" height="51"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-hf-fFZ">
+                                        <rect key="frame" x="8" y="10" width="100" height="51"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="f5L-00-aMo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azx-sr-aEa">
+                                        <rect key="frame" x="116" y="21" width="476" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue-Buck-Poster-full-size-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-Md-9Iu">
+                                        <rect key="frame" x="8" y="368" width="584" height="244"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="244" id="aEP-qL-plY"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" constant="20" id="5eh-t6-CtE"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="bottom" secondItem="XFd-b6-hPq" secondAttribute="bottomMargin" id="BUl-nY-CET"/>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="leading" secondItem="SP7-io-50B" secondAttribute="leading" id="CNb-8I-8Ht"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="top" secondItem="SP7-io-50B" secondAttribute="bottom" constant="8" symbolic="YES" id="SkO-ih-xEc"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="leading" secondItem="XFd-b6-hPq" secondAttribute="leadingMargin" id="Szi-oc-ozL"/>
-                                    <constraint firstItem="SP7-io-50B" firstAttribute="top" secondItem="dqC-Md-9Iu" secondAttribute="bottom" constant="8" symbolic="YES" id="WAO-g8-TQM"/>
-                                    <constraint firstItem="SP7-io-50B" firstAttribute="trailing" secondItem="AHv-74-I2T" secondAttribute="trailing" id="Ye5-fz-KBx"/>
-                                    <constraint firstItem="SP7-io-50B" firstAttribute="leading" secondItem="AHv-74-I2T" secondAttribute="leading" id="gVs-Gl-svl"/>
-                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="trailing" secondItem="SP7-io-50B" secondAttribute="trailing" id="ld6-v2-6iq"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailingMargin" id="qXY-6l-wTe"/>
-                                    <constraint firstItem="AHv-74-I2T" firstAttribute="centerX" secondItem="XFd-b6-hPq" secondAttribute="centerX" id="t0K-ir-piR"/>
+                                    <constraint firstItem="azx-sr-aEa" firstAttribute="centerY" secondItem="mSN-hf-fFZ" secondAttribute="centerY" id="2ah-LT-ORt"/>
+                                    <constraint firstItem="azx-sr-aEa" firstAttribute="leading" secondItem="mSN-hf-fFZ" secondAttribute="trailing" constant="8" symbolic="YES" id="3ZI-eN-wxi"/>
+                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="top" secondItem="AHv-74-I2T" secondAttribute="bottom" constant="1" id="5ol-Sv-tWg"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="top" secondItem="hBg-LX-kET" secondAttribute="bottom" constant="-2" id="71y-7v-4DV"/>
+                                    <constraint firstItem="P3G-wc-0Ms" firstAttribute="trailing" secondItem="yD0-hV-TpE" secondAttribute="trailing" id="72r-0P-N9h"/>
+                                    <constraint firstItem="sPz-LB-mbE" firstAttribute="leading" secondItem="WEY-tv-x8c" secondAttribute="leading" id="D7j-WD-woL"/>
+                                    <constraint firstItem="azx-sr-aEa" firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailingMargin" id="DbD-ai-g17"/>
+                                    <constraint firstItem="wg0-YE-WSW" firstAttribute="top" secondItem="WEY-tv-x8c" secondAttribute="bottom" constant="-13" id="Dof-LH-Ipq"/>
+                                    <constraint firstItem="hBg-LX-kET" firstAttribute="top" secondItem="WEY-tv-x8c" secondAttribute="bottom" constant="25" id="E75-ZG-ebi"/>
+                                    <constraint firstItem="hBg-LX-kET" firstAttribute="leading" secondItem="wg0-YE-WSW" secondAttribute="leading" id="IU4-wY-UU1"/>
+                                    <constraint firstItem="Yax-eZ-bql" firstAttribute="baseline" secondItem="wg0-YE-WSW" secondAttribute="baseline" constant="22" id="IiI-lC-2sY"/>
+                                    <constraint firstItem="wg0-YE-WSW" firstAttribute="top" secondItem="sPz-LB-mbE" secondAttribute="bottom" constant="25" id="Ik8-or-k0B"/>
+                                    <constraint firstItem="WEY-tv-x8c" firstAttribute="top" secondItem="mSN-hf-fFZ" secondAttribute="bottom" constant="26" id="K3m-bG-slb"/>
+                                    <constraint firstItem="P3G-wc-0Ms" firstAttribute="leading" secondItem="K8C-am-2nF" secondAttribute="leading" id="KXZ-eO-T6x"/>
+                                    <constraint firstItem="WEY-tv-x8c" firstAttribute="leading" secondItem="wg0-YE-WSW" secondAttribute="leading" id="L6J-w8-hAj"/>
+                                    <constraint firstItem="Yax-eZ-bql" firstAttribute="trailing" secondItem="AHv-74-I2T" secondAttribute="trailing" id="LjC-Nh-UWH"/>
+                                    <constraint firstItem="azx-sr-aEa" firstAttribute="leading" secondItem="K8C-am-2nF" secondAttribute="leading" id="POt-KF-aNs"/>
+                                    <constraint firstItem="Yax-eZ-bql" firstAttribute="top" secondItem="yD0-hV-TpE" secondAttribute="bottom" constant="8" symbolic="YES" id="PbT-hT-Zqs"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="leading" secondItem="wg0-YE-WSW" secondAttribute="trailing" constant="8" symbolic="YES" id="UwL-61-NIk"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="top" secondItem="P3G-wc-0Ms" secondAttribute="bottom" constant="8" symbolic="YES" id="WYW-59-jdb"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="centerX" secondItem="XFd-b6-hPq" secondAttribute="centerX" id="XvE-iF-ouz"/>
+                                    <constraint firstItem="K8C-am-2nF" firstAttribute="centerY" secondItem="sPz-LB-mbE" secondAttribute="centerY" id="Z0q-WB-vsk"/>
+                                    <constraint firstItem="hBg-LX-kET" firstAttribute="centerY" secondItem="Yax-eZ-bql" secondAttribute="centerY" id="dRh-ZG-EsU"/>
+                                    <constraint firstItem="mSN-hf-fFZ" firstAttribute="leading" secondItem="sPz-LB-mbE" secondAttribute="leading" id="eFK-cT-hAS"/>
+                                    <constraint firstItem="P3G-wc-0Ms" firstAttribute="top" secondItem="K8C-am-2nF" secondAttribute="bottom" constant="8" symbolic="YES" id="ir8-At-0Of"/>
+                                    <constraint firstItem="wg0-YE-WSW" firstAttribute="leading" secondItem="XFd-b6-hPq" secondAttribute="leadingMargin" id="jL7-oA-HsZ"/>
+                                    <constraint firstItem="dqC-Md-9Iu" firstAttribute="trailing" secondItem="AHv-74-I2T" secondAttribute="trailing" id="liN-SB-KrJ"/>
+                                    <constraint firstItem="hBg-LX-kET" firstAttribute="leading" secondItem="AHv-74-I2T" secondAttribute="leading" id="loQ-07-VYJ"/>
+                                    <constraint firstItem="K8C-am-2nF" firstAttribute="trailing" secondItem="azx-sr-aEa" secondAttribute="trailing" id="loe-ZS-Dee"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="top" secondItem="wg0-YE-WSW" secondAttribute="bottom" constant="36" id="mEx-MJ-uQt"/>
+                                    <constraint firstItem="P3G-wc-0Ms" firstAttribute="trailing" secondItem="K8C-am-2nF" secondAttribute="trailing" id="msR-66-RfN"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="trailing" secondItem="Yax-eZ-bql" secondAttribute="trailing" id="oJN-Bt-tYE"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="leading" secondItem="Yax-eZ-bql" secondAttribute="leading" id="ore-Ob-Dy7"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqC-Md-9Iu" secondAttribute="bottom" constant="-61" id="pu9-p8-tk8"/>
+                                    <constraint firstItem="WEY-tv-x8c" firstAttribute="centerY" secondItem="P3G-wc-0Ms" secondAttribute="centerY" id="tLM-rA-bL6"/>
+                                    <constraint firstItem="azx-sr-aEa" firstAttribute="leading" secondItem="sPz-LB-mbE" secondAttribute="trailing" constant="8" symbolic="YES" id="wcY-SF-RSj"/>
+                                    <constraint firstItem="AHv-74-I2T" firstAttribute="leading" secondItem="dqC-Md-9Iu" secondAttribute="leading" id="wsq-Zp-AFk"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="leading" secondItem="P3G-wc-0Ms" secondAttribute="leading" id="xMA-tk-CK4"/>
+                                    <constraint firstItem="yD0-hV-TpE" firstAttribute="leading" secondItem="hBg-LX-kET" secondAttribute="trailing" constant="8" symbolic="YES" id="ygB-uo-Asg"/>
+                                    <constraint firstItem="mSN-hf-fFZ" firstAttribute="top" secondItem="XFd-b6-hPq" secondAttribute="top" constant="10" id="z0B-AO-8nq"/>
+                                    <constraint firstItem="K8C-am-2nF" firstAttribute="top" secondItem="azx-sr-aEa" secondAttribute="bottom" constant="9" id="z3B-6J-kmU"/>
+                                    <constraint firstItem="K8C-am-2nF" firstAttribute="leading" secondItem="WEY-tv-x8c" secondAttribute="trailing" constant="8" symbolic="YES" id="zfp-vS-JTZ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="leading" secondItem="Kaw-Yx-q0o" secondAttribute="leading" id="E6j-pz-eg7"/>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="bottom" secondItem="sgc-rs-JKi" secondAttribute="top" id="GHY-Ys-70k"/>
-                            <constraint firstItem="XFd-b6-hPq" firstAttribute="top" secondItem="Kaw-Yx-q0o" secondAttribute="top" id="Hxi-Pm-blM"/>
-                            <constraint firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailing" id="ykJ-Su-nJ3"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="leading" secondItem="Kaw-Yx-q0o" secondAttribute="leading" id="DRU-Ke-sXq"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="top" secondItem="Kaw-Yx-q0o" secondAttribute="top" id="IHz-FZ-fJn"/>
+                            <constraint firstItem="XFd-b6-hPq" firstAttribute="bottom" secondItem="sgc-rs-JKi" secondAttribute="top" id="TSc-hH-wiO"/>
+                            <constraint firstAttribute="trailing" secondItem="XFd-b6-hPq" secondAttribute="trailing" id="yq4-nL-DUm"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBc-gb-Z1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4758" y="530"/>
+            <point key="canvasLocation" x="4963" y="423"/>
         </scene>
         <!--Brewer Detail View Controller-->
         <scene sceneID="AuK-7D-pQj">
@@ -189,11 +297,12 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-Vd-u6H">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-Vd-u6H">
                                 <rect key="frame" x="16" y="0.0" width="568" height="548"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" editable="NO" text="Placeholder Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-1g-YRu">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-1g-YRu">
                                         <rect key="frame" x="0.0" y="416" width="568" height="232"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="232" id="ms9-PV-wN1"/>
@@ -202,14 +311,16 @@ info@phillipsbeer.com
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barnstormer.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Jj-UCJ">
+                                    <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="barnstormer.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-Jj-UCJ">
                                         <rect key="frame" x="126" y="8" width="317" height="273"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="273" id="3oc-xq-jxi"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="scaleToFill" editable="NO" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-Fs-bCx">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-Fs-bCx">
                                         <rect key="frame" x="0.0" y="289" width="568" height="119"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="119" id="wBb-U8-8S0"/>
@@ -219,6 +330,7 @@ info@phillipsbeer.com
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="rcV-Jj-UCJ" secondAttribute="bottom" constant="267" id="9mI-yg-jjZ"/>
                                     <constraint firstItem="rcV-Jj-UCJ" firstAttribute="centerX" secondItem="aDk-Vd-u6H" secondAttribute="centerX" id="FWb-UK-N4b"/>
@@ -233,6 +345,7 @@ info@phillipsbeer.com
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aDk-Vd-u6H" firstAttribute="leading" secondItem="bG0-Tq-DsF" secondAttribute="leadingMargin" id="FEV-bo-FBQ"/>
@@ -262,16 +375,20 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-y1-mua">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-y1-mua">
                                 <rect key="frame" x="16" y="20" width="568" height="531"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TapHouseCell" id="HlP-29-UKG">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HlP-29-UKG" id="jJy-fx-yp0">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="jiv-Qc-RK8" kind="show" identifier="segueTapHouse" id="ZbR-xK-HNU"/>
                                         </connections>
@@ -279,6 +396,7 @@ info@phillipsbeer.com
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sZ5-y1-mua" firstAttribute="top" secondItem="0aA-9b-aGp" secondAttribute="top" constant="20" symbolic="YES" id="0dy-mJ-9nF"/>
@@ -308,16 +426,20 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xw4-1r-q6c">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xw4-1r-q6c">
                                 <rect key="frame" x="16" y="20" width="568" height="531"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BreweriesCell" id="Ddm-ba-K8Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ddm-ba-K8Z" id="Odb-Jp-h40">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="Enr-cj-za8" kind="show" identifier="segueBrewer" id="bpI-is-4Yn"/>
                                         </connections>
@@ -325,6 +447,7 @@ info@phillipsbeer.com
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xw4-1r-q6c" firstAttribute="top" secondItem="NFK-w1-M4O" secondAttribute="top" constant="20" symbolic="YES" id="1WP-qW-KRV"/>
@@ -354,11 +477,12 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-6R-LAe">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-6R-LAe">
                                 <rect key="frame" x="16" y="0.0" width="568" height="564"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
+                                    <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="taphouse2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-3L-WnQ">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="297"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O0M-3L-WnQ" secondAttribute="height" multiplier="568:297" id="l7w-ex-Flt"/>
                                         </constraints>
@@ -368,8 +492,9 @@ info@phillipsbeer.com
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="31" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5Z3-hB-wRg">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="31" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5Z3-hB-wRg">
                                         <rect key="frame" x="8" y="424" width="552" height="132"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="560" id="AQf-u0-t17"/>
@@ -384,8 +509,9 @@ info@phillipsbeer.com
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="30" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-It-HH5">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="30" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-It-HH5">
                                         <rect key="frame" x="8" y="298" width="552" height="118"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="118" id="lFg-AK-rPd"/>
@@ -395,6 +521,7 @@ info@phillipsbeer.com
                                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstItem="7hw-It-HH5" firstAttribute="top" secondItem="O0M-3L-WnQ" secondAttribute="bottom" constant="1" id="2vN-hp-DHQ"/>
                                     <constraint firstItem="O0M-3L-WnQ" firstAttribute="trailing" secondItem="7hw-It-HH5" secondAttribute="trailing" id="Bsp-SJ-6Zp"/>
@@ -417,6 +544,7 @@ info@phillipsbeer.com
                                 </variation>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="rvt-6R-LAe" secondAttribute="bottom" constant="36" id="9pP-YO-YFX"/>
@@ -439,6 +567,7 @@ info@phillipsbeer.com
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HQH-Ac-tgq">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -462,6 +591,7 @@ info@phillipsbeer.com
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4rr-s4-yJ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -481,6 +611,7 @@ info@phillipsbeer.com
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I4h-sI-VOU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -500,6 +631,7 @@ info@phillipsbeer.com
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bPH-en-lvA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -519,6 +651,7 @@ info@phillipsbeer.com
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vyg-u8-Vfh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -541,16 +674,20 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SUU-14-HT0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SUU-14-HT0">
                                 <rect key="frame" x="16" y="20" width="568" height="531"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToursCell" id="o3M-73-bq4">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3M-73-bq4" id="QJh-h9-fCW">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="b1d-WY-gRr" kind="show" identifier="segueTours" id="Ucw-Jc-xUz"/>
                                         </connections>
@@ -558,6 +695,7 @@ info@phillipsbeer.com
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SUU-14-HT0" firstAttribute="top" secondItem="x87-VY-wwa" secondAttribute="top" constant="20" symbolic="YES" id="FB7-Ai-wF5"/>
@@ -587,18 +725,20 @@ info@phillipsbeer.com
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-gV-Eg2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-gV-Eg2">
                                 <rect key="frame" x="16" y="0.0" width="568" height="543"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerglasses.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="szk-fY-th0">
                                         <rect key="frame" x="8" y="8" width="245" height="198"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="198" id="AaH-7N-u2l"/>
                                             <constraint firstAttribute="width" constant="245" id="Ka0-LZ-rTl"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
                                         <rect key="frame" x="4" y="205" width="560" height="330"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="560" id="19l-c9-wLe"/>
@@ -616,6 +756,7 @@ info@phillipsbeer.com
                                         </variation>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstItem="2ld-6u-z2f" firstAttribute="centerX" secondItem="Dq4-gV-Eg2" secondAttribute="centerX" id="56o-v5-iH4"/>
                                     <constraint firstItem="szk-fY-th0" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="topMargin" id="bfd-UX-Rwt"/>
@@ -627,6 +768,7 @@ info@phillipsbeer.com
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Dq4-gV-Eg2" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" id="0jG-jo-5gM"/>

@@ -10,23 +10,39 @@ import UIKit
 
 class BeerDetailViewController: UIViewController {
 
-    var beerName:String!
-    var beerDescription:String!
-    var beerBrewer:String!
-    var beerImage:String!
+    var beerName=""
+    var beerDescription=""
+    var beerBrewer=""
+    var beerImage=""
+    var beerABV=""
+    var beerStyle=""
+    var beerReviewDate=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let textViewToUpdate = self.view.viewWithTag(20) as! UITextView
+        let textViewToUpdate = self.view.viewWithTag(20) as! UITextField
         textViewToUpdate.text = beerBrewer
         let secondTextViewToUpdate = self.view.viewWithTag(21) as! UITextView
         secondTextViewToUpdate.text = beerDescription
         let imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
-        
-        let image : UIImage = UIImage(named: "phillips.png")!
+        let pathName=("http://victoriabeers.com/")+beerImage
+        let url = NSURL(string: pathName)
+        let data = NSData(contentsOfURL : url!)
+        var image : UIImage = UIImage(named: "phillips.png")!
+       // image.size // if you need it
+ //       if ((data) != nil){
+//            image = UIImage(data : data!)!
+//        }
         imageViewToUpdate.image = image
-        
+        let thirdTextViewToUpdate = self.view.viewWithTag(23) as! UITextField
+        thirdTextViewToUpdate.text = beerName
+        let fourthTextViewToUpdate = self.view.viewWithTag(24) as! UITextField
+        fourthTextViewToUpdate.text = beerABV
+        let fifthTextViewToUpdate = self.view.viewWithTag(25) as! UITextField
+        fifthTextViewToUpdate.text = beerStyle
+        let sixthTextViewToUpdate = self.view.viewWithTag(26) as! UITextField
+        sixthTextViewToUpdate.text = beerReviewDate
         // Do any additional setup after loading the view.
     }
 
