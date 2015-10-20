@@ -36,7 +36,6 @@ class BeerDetailViewController: UIViewController {
         let imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
         let pathName=("http://victoriabeers.com/")+beerImage
         imageViewToUpdate.imageFromUrl(pathName)
-        imageToPost=imageViewToUpdate.image
         let thirdTextViewToUpdate = self.view.viewWithTag(23) as! UITextField
         thirdTextViewToUpdate.text = beerName
         let fourthTextViewToUpdate = self.view.viewWithTag(24) as! UITextField

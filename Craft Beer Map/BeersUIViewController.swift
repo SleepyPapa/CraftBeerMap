@@ -67,6 +67,7 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
                     svc.beerStyle = filteredData[currentIndex].beerType
                     svc.beerABV = filteredData[currentIndex].beerABV
                     svc.beerReviewDate = filteredData[currentIndex].beerReviewDate
+                    svc.beerImage = filteredData[currentIndex].beerImage
                 }else{
                     svc.beerName = beersData2[currentIndex].beerName
                     svc.beerDescription = beersData2[currentIndex].beerNotes
@@ -75,6 +76,7 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
                     svc.beerABV = beersData2[currentIndex].beerABV
                     svc.beerReviewDate = beersData2[currentIndex].beerReviewDate
                     svc.beerName = beersData2[currentIndex].beerName
+                    svc.beerImage = beersData2[currentIndex].beerImage
                 }
             }
         }
