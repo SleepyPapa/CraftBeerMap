@@ -16,15 +16,64 @@ class MapViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // set initial location in Honolulu
-        let initialLocation = CLLocation(latitude: 48.4253705, longitude: -123.3625502) //Downtown Victoria
+        let initialLocation = CLLocation(latitude: 48.428703, longitude: -123.372134) //Downtown Victoria
         centerMapOnLocation(initialLocation)
         mapView.delegate = self
+        var interestingLocations = [RelevantLocations]()
+        
         let tapHouse = RelevantLocations(title: "Yates Street Taphouse",
             locationName: "Yates Street",
-            discipline: "Sculpture",
-            coordinate: CLLocationCoordinate2D(latitude: 48.4259337, longitude: -123.3630929))
+            discipline: "Tap House",
+            coordinate: CLLocationCoordinate2D(latitude: 48.4259337, longitude: -123.3633245))
+        interestingLocations.append(tapHouse)
+        let tapHouse2 = RelevantLocations(title: "The Drake Eatery",
+            locationName: "The Drake",
+            discipline: "BrewPub",
+            coordinate: CLLocationCoordinate2D(latitude: 48.4284105, longitude: -123.3692628))
+        interestingLocations.append(tapHouse2)
+        let tapHouse3 = RelevantLocations(title: "Canoe",
+            locationName: "Canoe",
+            discipline: "BrewPub",
+            coordinate: CLLocationCoordinate2D(latitude: 48.429472, longitude: -123.370820))
+        interestingLocations.append(tapHouse3)
+        let tapHouse4 = RelevantLocations(title: "Swans Hotel and Brew Pub",
+            locationName: "Swans",
+            discipline: "BrewPub",
+            coordinate: CLLocationCoordinate2D(latitude: 48.4286065, longitude: -123.3695022))
+        interestingLocations.append(tapHouse4)
+        let tapHouse5 = RelevantLocations(title: "Vancouver Island Brewing",
+            locationName: "VIB",
+            discipline: "Brewery",
+            coordinate: CLLocationCoordinate2D(latitude: 48.4348687, longitude:  -123.367369))
+        interestingLocations.append(tapHouse5)
+        let tapHouse6 = RelevantLocations(title: "Phillips",
+            locationName: "Phillips",
+            discipline: "Brewery",
+            coordinate: CLLocationCoordinate2D(latitude: 48.4322053, longitude: -123.367329))
+        interestingLocations.append(tapHouse6)
+        let tapHouse7 = RelevantLocations(title: "Spinnakers",
+            locationName: "Spinnakers",
+            discipline: "BrewPub",
+            coordinate: CLLocationCoordinate2D(latitude: 48.429141, longitude: -123.384874))
+        interestingLocations.append(tapHouse7)
+        let tapHouse8 = RelevantLocations(title: "Hoyne Brewing",
+            locationName: "Hoyne",
+            discipline: "Brewery",
+            coordinate: CLLocationCoordinate2D(latitude: 48.437602, longitude: -123.373715))
+        interestingLocations.append(tapHouse8)
+        let tapHouse9 = RelevantLocations(title: "Bard and Banker",
+            locationName: "Bard and Banker",
+            discipline: "Tap House",
+            coordinate: CLLocationCoordinate2D(latitude: 48.424895, longitude: -123.367954))
+        interestingLocations.append(tapHouse9)
+        let tapHouse10 = RelevantLocations(title: "Irish Times",
+            locationName: "Irish Times",
+            discipline: "Tap House",
+            coordinate: CLLocationCoordinate2D(latitude: 48.425721, longitude: -123.367764))
+        interestingLocations.append(tapHouse10)
+
         
-        mapView.addAnnotation(tapHouse)
+        mapView.addAnnotations(interestingLocations)
    }
     
     let regionRadius: CLLocationDistance = 2000

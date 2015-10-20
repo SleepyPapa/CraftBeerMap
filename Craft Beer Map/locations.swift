@@ -38,4 +38,14 @@ class RelevantLocations: NSObject, MKAnnotation {
         
         return mapItem
     }
+    func pinColor() -> MKPinAnnotationColor  {
+        switch discipline {
+        case "BrewPub", "Brewery":
+            return .Red
+        case "Tap House":
+            return .Purple
+        default:
+            return .Green
+        }
+    }
 }
