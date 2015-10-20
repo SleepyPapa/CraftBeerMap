@@ -17,6 +17,14 @@ class BeerDetailViewController: UIViewController {
     var beerABV=""
     var beerStyle=""
     var beerReviewDate=""
+    var imageToPost:UIImage? = nil {
+
+        didSet{
+            let imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
+            imageViewToUpdate.image = imageToPost
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +35,8 @@ class BeerDetailViewController: UIViewController {
         secondTextViewToUpdate.text = beerDescription
         let imageViewToUpdate = self.view.viewWithTag(22) as! UIImageView
         let pathName=("http://victoriabeers.com/")+beerImage
-        let url = NSURL(string: pathName)
-        let data = NSData(contentsOfURL : url!)
-        var image : UIImage = UIImage(named: "phillips.png")!
-       // image.size // if you need it
- //       if ((data) != nil){
-//            image = UIImage(data : data!)!
-//        }
-        imageViewToUpdate.image = image
+        imageViewToUpdate.imageFromUrl(pathName)
+        imageToPost=imageViewToUpdate.image
         let thirdTextViewToUpdate = self.view.viewWithTag(23) as! UITextField
         thirdTextViewToUpdate.text = beerName
         let fourthTextViewToUpdate = self.view.viewWithTag(24) as! UITextField
@@ -50,7 +52,7 @@ class BeerDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -62,4 +64,15 @@ class BeerDetailViewController: UIViewController {
     }
     */
 
+}
+extension UIImageView {
+    public func imageFromUrl(urlString: String) {
+        if let url = NSURL(string: urlString) {
+            let request = NSURLRequest(URL: url)
+            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+                (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+                self.image = UIImage(data: data!)
+            }
+        }
+    }
 }
