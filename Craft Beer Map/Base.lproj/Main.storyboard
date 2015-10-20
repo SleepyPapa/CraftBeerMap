@@ -19,28 +19,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" maximumZoomScale="3" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-B2-Gnv">
-                                <rect key="frame" x="16" y="20" width="567" height="531"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-t2-Eb8">
+                                <rect key="frame" x="20" y="28" width="560" height="523"/>
                                 <animations/>
-                                <inset key="scrollIndicatorInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bzq-6f-03G"/>
-                                </connections>
-                            </scrollView>
+                            </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P6f-B2-Gnv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="6hf-pZ-Spa"/>
-                            <constraint firstItem="P6f-B2-Gnv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="F1I-FF-QbS"/>
-                            <constraint firstItem="P6f-B2-Gnv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nAe-BA-8Ph"/>
-                            <constraint firstItem="P6f-B2-Gnv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vR1-op-X2f"/>
+                            <constraint firstItem="Pmv-t2-Eb8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Pcu-LI-Jtz"/>
+                            <constraint firstItem="Pmv-t2-Eb8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pfV-kt-g1Y"/>
+                            <constraint firstItem="Pmv-t2-Eb8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vAQ-du-ktl"/>
+                            <constraint firstItem="Pmv-t2-Eb8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zdN-t9-TaO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="1438651466_location-24.png" id="Pii-ho-6ad"/>
                     <navigationItem key="navigationItem" title="Map" id="Ai0-l5-EcE"/>
                     <connections>
-                        <outlet property="scrollView" destination="P6f-B2-Gnv" id="JTw-NI-2BO"/>
+                        <outlet property="mapView" destination="Pmv-t2-Eb8" id="sDo-Sc-BJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

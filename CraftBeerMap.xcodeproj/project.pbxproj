@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F166A881BD6F0F800E5F13E /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A871BD6F0F800E5F13E /* locations.swift */; settings = {ASSET_TAGS = (); }; };
+		0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A891BD6F2CD00E5F13E /* VCMapView.swift */; settings = {ASSET_TAGS = (); }; };
 		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; settings = {ASSET_TAGS = (); }; };
 		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; settings = {ASSET_TAGS = (); }; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F166A871BD6F0F800E5F13E /* locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locations.swift; sourceTree = "<group>"; };
+		0F166A891BD6F2CD00E5F13E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beerdata.csv; sourceTree = "<group>"; };
 		0F6AB47C1BD582370076AFD3 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_map.png; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */,
 				10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */,
 				10EE6DEE1B6FE341007A8659 /* MapViewController.swift */,
+				0F166A891BD6F2CD00E5F13E /* VCMapView.swift */,
+				0F166A871BD6F0F800E5F13E /* locations.swift */,
 				10EE6DF01B6FE341007A8659 /* Main.storyboard */,
 				10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */,
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
@@ -357,11 +363,13 @@
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
+				0F166A881BD6F0F800E5F13E /* locations.swift in Sources */,
 				10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */,
 				10EE6E131B6FE961007A8659 /* BreweriesUIViewController.swift in Sources */,
 				16C71D711B828C1600B75418 /* BrewerDetailViewController.swift in Sources */,
 				0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */,
 				10EE6E151B6FE96F007A8659 /* ToursUIViewController.swift in Sources */,
+				0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */,
 				10EE6E111B6FE951007A8659 /* TapHousesUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
