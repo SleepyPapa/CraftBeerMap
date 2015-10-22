@@ -56,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zq3-FU-zRU">
-                                <rect key="frame" x="20" y="20" width="560" height="523"/>
+                                <rect key="frame" x="20" y="0.0" width="560" height="551"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="LXz-uM-a4m">
@@ -64,6 +64,10 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <scopeButtonTitles>
+                                        <string>Beer</string>
+                                        <string>Brewer</string>
+                                    </scopeButtonTitles>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeersCell" textLabel="cOQ-9j-2vo" detailTextLabel="yCM-ox-6T1" style="IBUITableViewCellStyleSubtitle" id="oWj-Fp-5ek">
@@ -104,13 +108,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="trailing" secondItem="5y0-yD-sDl" secondAttribute="trailingMargin" id="2Kr-fx-DQH"/>
-                            <constraint firstItem="mXf-k3-X1K" firstAttribute="top" secondItem="Zq3-FU-zRU" secondAttribute="bottom" constant="8" symbolic="YES" id="OFM-L0-z2Z"/>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="leading" secondItem="5y0-yD-sDl" secondAttribute="leadingMargin" id="Zee-tJ-cD4"/>
-                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="top" secondItem="5y0-yD-sDl" secondAttribute="top" constant="20" symbolic="YES" id="gtE-bj-9hv"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="bottom" secondItem="mXf-k3-X1K" secondAttribute="top" id="DmF-N6-WFL"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="trailing" secondItem="5y0-yD-sDl" secondAttribute="trailingMargin" id="JSu-Vm-MLY"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="leading" secondItem="5y0-yD-sDl" secondAttribute="leadingMargin" id="VsX-4e-yY9"/>
+                            <constraint firstItem="Zq3-FU-zRU" firstAttribute="top" secondItem="5y0-yD-sDl" secondAttribute="top" id="gda-iM-lzC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Beers" id="6lU-Ws-W1w"/>
+                    <navigationItem key="navigationItem" title="Beer Museum" id="6lU-Ws-W1w"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="xzO-5v-0KA" id="6CG-qz-NQ2"/>
                         <outlet property="searchbar" destination="LXz-uM-a4m" id="OwA-g1-Qw1"/>
@@ -676,7 +680,7 @@
             </objects>
             <point key="canvasLocation" x="3215" y="1905"/>
         </scene>
-        <!--Tours-->
+        <!--The Swig!-->
         <scene sceneID="8em-8u-Zwz">
             <objects>
                 <viewController id="cUc-E6-AO5" customClass="ToursUIViewController" customModule="CraftBeerMap" customModuleProvider="target" sceneMemberID="viewController">
@@ -718,7 +722,7 @@
                             <constraint firstItem="SUU-14-HT0" firstAttribute="leading" secondItem="x87-VY-wwa" secondAttribute="leadingMargin" constant="-4" id="pi9-43-bhz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tours" id="sbz-FL-08C"/>
+                    <navigationItem key="navigationItem" title="The Swig!" id="sbz-FL-08C"/>
                     <connections>
                         <outlet property="tableView" destination="SUU-14-HT0" id="b48-38-WDp"/>
                     </connections>
@@ -739,24 +743,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-gV-Eg2">
-                                <rect key="frame" x="16" y="8" width="568" height="543"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-gV-Eg2">
+                                <rect key="frame" x="16" y="20" width="568" height="531"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="beerglasses.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="szk-fY-th0">
-                                        <rect key="frame" x="8" y="8" width="245" height="198"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="198" id="SlU-cg-Bhd"/>
-                                            <constraint firstAttribute="width" constant="245" id="rv9-8w-anF"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="SlU-cg-Bhd"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
-                                        <rect key="frame" x="4" y="208" width="560" height="308"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-6u-z2f">
+                                        <rect key="frame" x="0.0" y="86" width="568" height="152"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -773,40 +764,50 @@
                                             </mask>
                                         </variation>
                                     </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Swig Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-Ky-C4k">
+                                        <rect key="frame" x="0.0" y="57" width="150" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="41" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-SB-NKw">
+                                        <rect key="frame" x="146" y="54" width="422" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plB-8l-XZ7">
+                                        <rect key="frame" x="0.0" y="281" width="574" height="250"/>
+                                        <animations/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-rf-291">
+                                        <rect key="frame" x="8" y="246" width="133" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="42" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Zo-bY-DFu">
+                                        <rect key="frame" x="146" y="242" width="422" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="szk-fY-th0" secondAttribute="bottom" constant="273" id="17V-Ef-b9H"/>
-                                    <constraint firstItem="szk-fY-th0" firstAttribute="leading" secondItem="Dq4-gV-Eg2" secondAttribute="leadingMargin" id="4cd-Gw-i9m"/>
-                                    <constraint firstItem="szk-fY-th0" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="top" constant="72" id="Hg8-1V-WJa"/>
-                                    <constraint firstAttribute="bottom" secondItem="2ld-6u-z2f" secondAttribute="bottom" constant="27" id="OdL-nL-EAR"/>
-                                    <constraint firstAttribute="trailing" secondItem="szk-fY-th0" secondAttribute="trailing" constant="315" id="RRY-hz-oxL"/>
-                                    <constraint firstItem="szk-fY-th0" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="top" constant="72" id="ZSu-Ic-gBB"/>
-                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="szk-fY-th0" secondAttribute="bottom" constant="2" id="cS0-0R-Ueu"/>
-                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="szk-fY-th0" secondAttribute="bottom" constant="2" id="eCL-Mi-QkK"/>
-                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="leading" secondItem="Dq4-gV-Eg2" secondAttribute="leading" constant="4" id="rhO-YL-icx"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ZSu-Ic-gBB"/>
-                                        <exclude reference="eCL-Mi-QkK"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" constant="-4" id="2Rl-iW-Td6"/>
                             <constraint firstItem="Dq4-gV-Eg2" firstAttribute="top" secondItem="eGN-eR-Tmb" secondAttribute="bottom" constant="-56" id="2bN-fp-I4t"/>
-                            <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="eGN-eR-Tmb" secondAttribute="bottom" constant="152" id="5Xw-Zg-pEv"/>
                             <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="eGN-eR-Tmb" secondAttribute="bottom" constant="152" id="EQX-TR-ZMb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Dq4-gV-Eg2" secondAttribute="trailing" constant="-4" id="OZy-5E-0hR"/>
-                            <constraint firstItem="VFG-OH-NPo" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="bottom" id="SE1-2d-FVA"/>
-                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="top" secondItem="9Qa-cr-BOU" secondAttribute="topMargin" constant="8" id="evj-w5-xpv"/>
-                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" constant="-4" id="oyB-kZ-uy9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2ld-6u-z2f" secondAttribute="trailing" id="vn2-88-u1X"/>
-                            <constraint firstItem="VFG-OH-NPo" firstAttribute="top" secondItem="Dq4-gV-Eg2" secondAttribute="bottom" id="zft-2u-wAw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ld-6u-z2f" secondAttribute="trailing" constant="-4" id="FJX-UJ-Ar4"/>
+                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" constant="-4" id="GGq-Wp-oB3"/>
+                            <constraint firstItem="2ld-6u-z2f" firstAttribute="leading" secondItem="9Qa-cr-BOU" secondAttribute="leadingMargin" constant="-4" id="jEn-xx-g1C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dq4-gV-Eg2" secondAttribute="trailing" constant="-4" id="oai-Ch-u8G"/>
+                            <constraint firstItem="Dq4-gV-Eg2" firstAttribute="top" secondItem="eGN-eR-Tmb" secondAttribute="bottom" constant="-44" id="vOA-wa-tUw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -828,7 +829,6 @@
         <image name="1438651783_walking.png" width="32" height="32"/>
         <image name="1438651851_beer.png" width="32" height="32"/>
         <image name="barnstormer.png" width="317" height="625"/>
-        <image name="beerglasses.jpg" width="550" height="413"/>
         <image name="taphouse2.jpg" width="630" height="421"/>
     </resources>
 </document>

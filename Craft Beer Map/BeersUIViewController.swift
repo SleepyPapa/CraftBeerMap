@@ -112,7 +112,6 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        
         filteredData = beersData2.filter({ (text) -> Bool in
             let tmp: NSString = text.beerName
             let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
