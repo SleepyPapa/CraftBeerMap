@@ -22,14 +22,17 @@ class ToursDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let textViewToUpdate = self.view.viewWithTag(40) as! UITextView
+        let textViewToUpdate = self.view.viewWithTag(41) as! UITextField
         textViewToUpdate.text = swigName
-        let textViewToUpdate2 = self.view.viewWithTag(41) as! UITextView
+        let textViewToUpdate2 = self.view.viewWithTag(40) as! UITextView
         textViewToUpdate2.text = swigReview
-        let textViewToUpdate3 = self.view.viewWithTag(42) as! UITextView
+        let textViewToUpdate3 = self.view.viewWithTag(42) as! UITextField
         textViewToUpdate3.text = swigDate
-        let textViewToUpdate4 = self.view.viewWithTag(43) as! UITextView
-        textViewToUpdate4.text = swigLine
+        let imageViewToUpdate = self.view.viewWithTag(44) as! UIImageView
+        let pathName=("http://victoriabeers.com/")+swigImage
+        imageViewToUpdate.imageFromUrl(pathName)
+//        let textViewToUpdate4 = self.view.viewWithTag(43) as! UITextView
+//        textViewToUpdate4.text = swigLine
 
         // Do any additional setup after loading the view.
     }

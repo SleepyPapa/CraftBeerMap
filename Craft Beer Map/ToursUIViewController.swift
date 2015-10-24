@@ -21,7 +21,7 @@ class ToursUIViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) 
         let row = indexPath.row
-        cell.textLabel?.text = swigData[row].toursName
+        cell.textLabel?.text = swigData[row].swigName
         return cell
     }
     
