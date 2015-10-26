@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F166A881BD6F0F800E5F13E /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A871BD6F0F800E5F13E /* locations.swift */; settings = {ASSET_TAGS = (); }; };
-		0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A891BD6F2CD00E5F13E /* VCMapView.swift */; settings = {ASSET_TAGS = (); }; };
-		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; settings = {ASSET_TAGS = (); }; };
-		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; settings = {ASSET_TAGS = (); }; };
+		0F166A881BD6F0F800E5F13E /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A871BD6F0F800E5F13E /* locations.swift */; };
+		0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A891BD6F2CD00E5F13E /* VCMapView.swift */; };
+		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; };
+		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
 		0FBCCC991BC6EE7C00798764 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBCCC981BC6EE7C00798764 /* CloudKit.framework */; };
+		0FD045851BDE9B0800180E4E /* phillipslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045841BDE9B0800180E4E /* phillipslogo.png */; };
+		0FD045871BDE9D8800180E4E /* vib_logo_dark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045861BDE9D8800180E4E /* vib_logo_dark2.png */; };
+		0FD045891BDEA07000180E4E /* lighthouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045881BDEA07000180E4E /* lighthouse.png */; };
+		0FD0458B1BDEA26200180E4E /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0458A1BDEA26200180E4E /* moon.png */; };
+		0FD0458D1BDEA91600180E4E /* Hoyne.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0458C1BDEA91600180E4E /* Hoyne.png */; };
+		0FD045911BDEA9D600180E4E /* spinakers.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045901BDEA9D600180E4E /* spinakers.png */; };
+		0FD045931BDEAA2900180E4E /* swans.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045921BDEAA2900180E4E /* swans.png */; };
+		0FD045951BDEAA8F00180E4E /* canoe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045941BDEAA8F00180E4E /* canoe.png */; };
+		0FD045971BDEAB1600180E4E /* driftwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045961BDEAB1600180E4E /* driftwood.png */; };
+		0FD045991BDEAB8E00180E4E /* 4mile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045981BDEAB8E00180E4E /* 4mile.png */; };
+		0FD0459B1BDEAC0B00180E4E /* category12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0459A1BDEAC0B00180E4E /* category12.png */; };
+		0FD0459D1BDEACA700180E4E /* parallel49.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0459C1BDEACA700180E4E /* parallel49.png */; };
+		0FD0459F1BDEAD0C00180E4E /* saltspring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0459E1BDEAD0C00180E4E /* saltspring.png */; };
 		109C6AB81B7A805100C955B4 /* CraftBeerMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */; };
 		109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */; };
 		109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */; };
 		10ECECD81B979FA2008F6114 /* irishtimes.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECD71B979FA2008F6114 /* irishtimes.png */; };
 		10ECECDA1B979FB0008F6114 /* VIB.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECD91B979FB0008F6114 /* VIB.png */; };
-		10ECECDC1B979FB9008F6114 /* canoe.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECDB1B979FB9008F6114 /* canoe.png */; };
 		10ECECDE1B979FC2008F6114 /* phillips.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECDD1B979FC2008F6114 /* phillips.png */; };
 		10ECECE01B979FC8008F6114 /* bard.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECDF1B979FC8008F6114 /* bard.png */; };
 		10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6DEC1B6FE341007A8659 /* AppDelegate.swift */; };
@@ -68,12 +80,24 @@
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
 		0FBCCC971BC6EE6B00798764 /* CraftBeerMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CraftBeerMap.entitlements; sourceTree = SOURCE_ROOT; };
 		0FBCCC981BC6EE7C00798764 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		0FD045841BDE9B0800180E4E /* phillipslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phillipslogo.png; sourceTree = "<group>"; };
+		0FD045861BDE9D8800180E4E /* vib_logo_dark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vib_logo_dark2.png; sourceTree = "<group>"; };
+		0FD045881BDEA07000180E4E /* lighthouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighthouse.png; sourceTree = "<group>"; };
+		0FD0458A1BDEA26200180E4E /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		0FD0458C1BDEA91600180E4E /* Hoyne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hoyne.png; sourceTree = "<group>"; };
+		0FD045901BDEA9D600180E4E /* spinakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinakers.png; sourceTree = "<group>"; };
+		0FD045921BDEAA2900180E4E /* swans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swans.png; sourceTree = "<group>"; };
+		0FD045941BDEAA8F00180E4E /* canoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canoe.png; sourceTree = "<group>"; };
+		0FD045961BDEAB1600180E4E /* driftwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driftwood.png; sourceTree = "<group>"; };
+		0FD045981BDEAB8E00180E4E /* 4mile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4mile.png; sourceTree = "<group>"; };
+		0FD0459A1BDEAC0B00180E4E /* category12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category12.png; sourceTree = "<group>"; };
+		0FD0459C1BDEACA700180E4E /* parallel49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallel49.png; sourceTree = "<group>"; };
+		0FD0459E1BDEAD0C00180E4E /* saltspring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saltspring.png; sourceTree = "<group>"; };
 		109C6AB71B7A805100C955B4 /* CraftBeerMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftBeerMap.xcdatamodel; sourceTree = "<group>"; };
 		109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-mapLarge.jpg"; sourceTree = "<group>"; };
 		109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brewer.swift; path = ../Brewer.swift; sourceTree = "<group>"; };
 		10ECECD71B979FA2008F6114 /* irishtimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irishtimes.png; sourceTree = "<group>"; };
 		10ECECD91B979FB0008F6114 /* VIB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VIB.png; sourceTree = "<group>"; };
-		10ECECDB1B979FB9008F6114 /* canoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canoe.png; sourceTree = "<group>"; };
 		10ECECDD1B979FC2008F6114 /* phillips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phillips.png; sourceTree = "<group>"; };
 		10ECECDF1B979FC8008F6114 /* bard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bard.png; sourceTree = "<group>"; };
 		10EE6DE71B6FE341007A8659 /* CraftBeerMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraftBeerMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,12 +192,24 @@
 				0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */,
 				109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */,
 				0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */,
+				0FD0458C1BDEA91600180E4E /* Hoyne.png */,
+				0FD0458A1BDEA26200180E4E /* moon.png */,
+				0FD045961BDEAB1600180E4E /* driftwood.png */,
+				0FD045841BDE9B0800180E4E /* phillipslogo.png */,
 				10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */,
+				0FD045881BDEA07000180E4E /* lighthouse.png */,
 				10ECECD71B979FA2008F6114 /* irishtimes.png */,
+				0FD0459A1BDEAC0B00180E4E /* category12.png */,
+				0FD0459E1BDEAD0C00180E4E /* saltspring.png */,
+				0FD045921BDEAA2900180E4E /* swans.png */,
+				0FD0459C1BDEACA700180E4E /* parallel49.png */,
+				0FD045901BDEA9D600180E4E /* spinakers.png */,
+				0FD045981BDEAB8E00180E4E /* 4mile.png */,
+				0FD045861BDE9D8800180E4E /* vib_logo_dark2.png */,
 				10ECECD91B979FB0008F6114 /* VIB.png */,
+				0FD045941BDEAA8F00180E4E /* canoe.png */,
 				10ECECDF1B979FC8008F6114 /* bard.png */,
 				10ECECDD1B979FC2008F6114 /* phillips.png */,
-				10ECECDB1B979FB9008F6114 /* canoe.png */,
 				10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */,
 				0F6AB47C1BD582370076AFD3 /* square_map.png */,
 				10EE6E2A1B700641007A8659 /* 1438651657_factory.png */,
@@ -318,21 +354,33 @@
 			files = (
 				10EE6E391B7028BE007A8659 /* craft-beer-map_rotated.jpg in Resources */,
 				10EE6E191B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg in Resources */,
-				10ECECDC1B979FB9008F6114 /* canoe.png in Resources */,
+				0FD0459D1BDEACA700180E4E /* parallel49.png in Resources */,
 				10ECECDE1B979FC2008F6114 /* phillips.png in Resources */,
 				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
+				0FD045991BDEAB8E00180E4E /* 4mile.png in Resources */,
+				0FD045851BDE9B0800180E4E /* phillipslogo.png in Resources */,
+				0FD045951BDEAA8F00180E4E /* canoe.png in Resources */,
 				10EE6E2B1B700641007A8659 /* 1438651657_factory.png in Resources */,
+				0FD0459B1BDEAC0B00180E4E /* category12.png in Resources */,
 				10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */,
 				0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */,
+				0FD0459F1BDEAD0C00180E4E /* saltspring.png in Resources */,
 				10EE6E2F1B700701007A8659 /* 1438651851_beer.png in Resources */,
 				10EE6E0D1B6FE44E007A8659 /* BeerMap-Cover1.jpg in Resources */,
 				109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */,
 				10ECECD81B979FA2008F6114 /* irishtimes.png in Resources */,
 				167F71141B82459C00DAC9C6 /* Default-568h@2x.png in Resources */,
+				0FD045911BDEA9D600180E4E /* spinakers.png in Resources */,
 				10EE6E291B7005CF007A8659 /* 1438651544_09-house.png in Resources */,
+				0FD045871BDE9D8800180E4E /* vib_logo_dark2.png in Resources */,
+				0FD0458B1BDEA26200180E4E /* moon.png in Resources */,
+				0FD045971BDEAB1600180E4E /* driftwood.png in Resources */,
 				10EE6E351B702058007A8659 /* craft-beer-map.jpg in Resources */,
 				10EE6E311B700DAB007A8659 /* taphouse2.jpg in Resources */,
+				0FD045931BDEAA2900180E4E /* swans.png in Resources */,
+				0FD045891BDEA07000180E4E /* lighthouse.png in Resources */,
 				10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */,
+				0FD0458D1BDEA91600180E4E /* Hoyne.png in Resources */,
 				10EE6E2D1B7006BD007A8659 /* 1438651783_walking.png in Resources */,
 				0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */,
 				10ECECDA1B979FB0008F6114 /* VIB.png in Resources */,

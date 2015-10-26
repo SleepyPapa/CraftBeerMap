@@ -35,15 +35,52 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
         if(searchActive){
             cell!.textLabel?.text = filteredData[indexPath.row].beerName
             cell!.detailTextLabel?.text = filteredData[indexPath.row].beerBrewer
+            let nameOfBrewer = filteredData[indexPath.row].beerBrewer
+            cell!.imageView?.image = UIImage(named: (imageFileForBrewer(nameOfBrewer)))
         } else {
             cell!.textLabel?.text = beersData2[indexPath.row].beerName
             cell!.detailTextLabel?.text = beersData2[indexPath.row].beerBrewer
-        }
-        
-        //       let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath)
-        //       cell.textLabel!.text = beersData2[indexPath.row].beerName
-        
+            let nameOfBrewer = beersData2[indexPath.row].beerBrewer
+            cell!.imageView?.image = UIImage(named: (imageFileForBrewer(nameOfBrewer)))
+            }
         return cell!
+    }
+    
+    func imageFileForBrewer (brewerName: String)->String {
+        var imageName = ""
+        switch (brewerName){
+        case "Phillips":
+            imageName = "phillipslogo.png"
+        case "Vancouver Island Brewery":
+            imageName = "vib_logo_dark2.png"
+        case "Lighthouse":
+            imageName = "lighthouse.png"
+        case "Moon Under Water":
+            imageName = "moon.png"
+        case "Hoyne":
+            imageName = "Hoyne.png"
+        case "Spinnakers":
+            imageName = "spinakers.png"
+        case "Swans":
+            imageName = "swans.png"
+        case "Canoe":
+            imageName = "canoe.png"
+        case "Driftwood":
+            imageName = "driftwood.png"
+        case "4 Mile":
+            imageName = "4mile.png"
+        case "Parallel 49":
+            imageName = "parallel49.png"
+        case "Category 12":
+            imageName = "category12.png"
+        case "Saltspring":
+            imageName = "saltspring.png"
+
+        default:
+            imageName = "1438651851_beer.png"
+        }
+        return imageName
+    
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -422,7 +459,7 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
             "Our Emily Summer Ale","3.90%","  Brewed with PilsnerVienna and Canadian wheat malts juxtaposed to distinctive European crisp hops.  This eclectic summer session ale has been brewed with partial proceeds to support Victoria's 'Our Emily' bronze statue created by Barbara Paterson.","On 28 Dec 2012","wp-content/uploads/2012/12/Our-Emily-1024x682.jpg","Spinnakers","Weizen",
             "Overboard Imperial Pilsner","8.50%","  Overboard Imperial Pilsner has an intense flavour profile and a strong 8.5% alc/vol.  A long cool fermentation with a pure Pilsner yeast strain creates a very unique spicy flavour and a soft malty body.  Considered to be one of the best hops in the world and straight off the vines from the 2010 Germany harvestHallertau Mittlefrüh is the only hop used in this beer.  This Pilsner  is crystal clear with a rich golden colour and is best enjoyed well chilled an served in a stemmed tulip glass.","On 8 Dec 2012","wp-content/uploads/2012/12/Overboard-1024x682.jpg","Lighthouse","Imperial Pilsner",
             "Paleontologist's Honey Pale Ale"," 4.7%","  A special reserve  brewed especially for paleontologists and dino lovers around the world.  Make no bones about it  this prehistoric ale will satisfy eve the most particular tastes.","On 28 Dec 2012","wp-content/uploads/2012/12/Paleontolgists-Honey-Pale-Ale-1024x682.jpg","Spinnakers","Pale Ale",
-            "Pandamonium &#8220;The 11th Hour&#8221; Anniversary Ale","11.00%","  Brewed to 11%we loaded hops into the pre-boiland then added more hops every 11 minutes over a 111 minute boil for a grand total of 11 hop additions (plus a dry hop). Hopquakes like this don’t come around very often and we only turn 11 onceso enjoy this brewtiful beast while you can!","On 8 Jan 2013","wp-content/uploads/2013/01/Pandamonium1-1024x682.jpg","","Imperial IPA",
+            "Pandamonium 'The 11th Hour' Anniversary Ale","11.00%","  Brewed to 11%we loaded hops into the pre-boiland then added more hops every 11 minutes over a 111 minute boil for a grand total of 11 hop additions (plus a dry hop). Hopquakes like this don’t come around very often and we only turn 11 onceso enjoy this brewtiful beast while you can!","On 8 Jan 2013","wp-content/uploads/2013/01/Pandamonium1-1024x682.jpg","","Imperial IPA",
             "Pandora Pale Ale"," 4.5%"," A perfect initiation to our range of 'real ales this is truly an imperial product. We employ a hint of crystal malt accentuated by Willamette and Fuggle hopsproducing a lightslightly fruity and delightfully aromatic beer.","On 3 Aug 2013","wp-content/uploads/2013/08/Pandora-Pale-Ale-1024x682.jpg","Swans","Pale Ale",
             "Phoenix Gold Lager","5.00%","  This unpasteurized Bohemian lager is no ordinary bird. As refreshing as it is smoothPhoenix showcases well-balanced malt flavours with a crispdry finish. Plummet into a flaming spiral of satisfaction.","On 2 Feb 2013","wp-content/uploads/2013/02/Phoenix1-1024x682.jpg","Phillips","Czech Pilsner",
             "Pilsner Doehnel","5.00%","  Named after local artisan maltster  Mike Doehnel  who grew and malted the barley used in the beer – is described as a “drysnappy North German-style Pils (that) was lagered for 6 weeks and hopped generously.”","On 25 Jun 2014","wp-content/uploads/2014/06/Doehnel-Pilsner-1024x682.jpg","Driftwood","Pilsner",
