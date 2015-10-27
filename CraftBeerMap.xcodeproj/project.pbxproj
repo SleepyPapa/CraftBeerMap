@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0F166A881BD6F0F800E5F13E /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A871BD6F0F800E5F13E /* locations.swift */; };
 		0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A891BD6F2CD00E5F13E /* VCMapView.swift */; };
-		0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */; };
 		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
+		0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB08B451BE01748007748FB /* MainScreenViewController.swift */; };
+		0FB08B481BE019DF007748FB /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB08B471BE019DF007748FB /* BasicCell.swift */; };
 		0FBCCC991BC6EE7C00798764 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBCCC981BC6EE7C00798764 /* CloudKit.framework */; };
 		0FD045851BDE9B0800180E4E /* phillipslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045841BDE9B0800180E4E /* phillipslogo.png */; };
 		0FD045871BDE9D8800180E4E /* vib_logo_dark2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD045861BDE9D8800180E4E /* vib_logo_dark2.png */; };
@@ -28,7 +29,6 @@
 		0FD0459D1BDEACA700180E4E /* parallel49.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0459C1BDEACA700180E4E /* parallel49.png */; };
 		0FD0459F1BDEAD0C00180E4E /* saltspring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD0459E1BDEAD0C00180E4E /* saltspring.png */; };
 		109C6AB81B7A805100C955B4 /* CraftBeerMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */; };
-		109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */; };
 		109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */; };
 		10ECECD81B979FA2008F6114 /* irishtimes.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECD71B979FA2008F6114 /* irishtimes.png */; };
 		10ECECDA1B979FB0008F6114 /* VIB.png in Resources */ = {isa = PBXBuildFile; fileRef = 10ECECD91B979FB0008F6114 /* VIB.png */; };
@@ -40,12 +40,10 @@
 		10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF31B6FE341007A8659 /* Images.xcassets */; };
 		10EE6DF71B6FE341007A8659 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */; };
 		10EE6E031B6FE341007A8659 /* CraftBeerMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E021B6FE341007A8659 /* CraftBeerMapTests.swift */; };
-		10EE6E0D1B6FE44E007A8659 /* BeerMap-Cover1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */; };
 		10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */; };
 		10EE6E111B6FE951007A8659 /* TapHousesUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */; };
 		10EE6E131B6FE961007A8659 /* BreweriesUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */; };
 		10EE6E151B6FE96F007A8659 /* ToursUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */; };
-		10EE6E191B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */; };
 		10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */; };
 		10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E201B70049F007A8659 /* 1438650995_beer.png */; };
 		10EE6E271B700586007A8659 /* 1438651466_location-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E261B700586007A8659 /* 1438651466_location-24.png */; };
@@ -53,10 +51,6 @@
 		10EE6E2B1B700641007A8659 /* 1438651657_factory.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E2A1B700641007A8659 /* 1438651657_factory.png */; };
 		10EE6E2D1B7006BD007A8659 /* 1438651783_walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E2C1B7006BD007A8659 /* 1438651783_walking.png */; };
 		10EE6E2F1B700701007A8659 /* 1438651851_beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E2E1B700701007A8659 /* 1438651851_beer.png */; };
-		10EE6E311B700DAB007A8659 /* taphouse2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E301B700DAB007A8659 /* taphouse2.jpg */; };
-		10EE6E331B7015E6007A8659 /* barnstormer.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E321B7015E6007A8659 /* barnstormer.png */; };
-		10EE6E351B702058007A8659 /* craft-beer-map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E341B702058007A8659 /* craft-beer-map.jpg */; };
-		10EE6E391B7028BE007A8659 /* craft-beer-map_rotated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */; };
 		167F71141B82459C00DAC9C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167F71131B82459C00DAC9C6 /* Default-568h@2x.png */; };
 		16C71D711B828C1600B75418 /* BrewerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -74,10 +68,11 @@
 /* Begin PBXFileReference section */
 		0F166A871BD6F0F800E5F13E /* locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locations.swift; sourceTree = "<group>"; };
 		0F166A891BD6F2CD00E5F13E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
-		0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beerdata.csv; sourceTree = "<group>"; };
 		0F6AB47C1BD582370076AFD3 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_map.png; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
+		0FB08B451BE01748007748FB /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		0FB08B471BE019DF007748FB /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		0FBCCC971BC6EE6B00798764 /* CraftBeerMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CraftBeerMap.entitlements; sourceTree = SOURCE_ROOT; };
 		0FBCCC981BC6EE7C00798764 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0FD045841BDE9B0800180E4E /* phillipslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phillipslogo.png; sourceTree = "<group>"; };
@@ -94,7 +89,6 @@
 		0FD0459C1BDEACA700180E4E /* parallel49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallel49.png; sourceTree = "<group>"; };
 		0FD0459E1BDEAD0C00180E4E /* saltspring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saltspring.png; sourceTree = "<group>"; };
 		109C6AB71B7A805100C955B4 /* CraftBeerMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CraftBeerMap.xcdatamodel; sourceTree = "<group>"; };
-		109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-mapLarge.jpg"; sourceTree = "<group>"; };
 		109C6ABB1B7AA5CC00C955B4 /* Brewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brewer.swift; path = ../Brewer.swift; sourceTree = "<group>"; };
 		10ECECD71B979FA2008F6114 /* irishtimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irishtimes.png; sourceTree = "<group>"; };
 		10ECECD91B979FB0008F6114 /* VIB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VIB.png; sourceTree = "<group>"; };
@@ -110,12 +104,10 @@
 		10EE6DFC1B6FE341007A8659 /* Craft Beer MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Craft Beer MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EE6E011B6FE341007A8659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10EE6E021B6FE341007A8659 /* CraftBeerMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftBeerMapTests.swift; sourceTree = "<group>"; };
-		10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BeerMap-Cover1.jpg"; sourceTree = "<group>"; };
 		10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersUIViewController.swift; sourceTree = "<group>"; };
 		10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHousesUIViewController.swift; sourceTree = "<group>"; };
 		10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweriesUIViewController.swift; sourceTree = "<group>"; };
 		10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursUIViewController.swift; sourceTree = "<group>"; };
-		10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blue-Buck-Poster-full-size-2.jpg"; sourceTree = "<group>"; };
 		10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		10EE6E201B70049F007A8659 /* 1438650995_beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1438650995_beer.png; sourceTree = "<group>"; };
 		10EE6E261B700586007A8659 /* 1438651466_location-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1438651466_location-24.png"; sourceTree = "<group>"; };
@@ -123,10 +115,6 @@
 		10EE6E2A1B700641007A8659 /* 1438651657_factory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1438651657_factory.png; sourceTree = "<group>"; };
 		10EE6E2C1B7006BD007A8659 /* 1438651783_walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1438651783_walking.png; sourceTree = "<group>"; };
 		10EE6E2E1B700701007A8659 /* 1438651851_beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1438651851_beer.png; sourceTree = "<group>"; };
-		10EE6E301B700DAB007A8659 /* taphouse2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taphouse2.jpg; sourceTree = "<group>"; };
-		10EE6E321B7015E6007A8659 /* barnstormer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barnstormer.png; sourceTree = "<group>"; };
-		10EE6E341B702058007A8659 /* craft-beer-map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-map.jpg"; sourceTree = "<group>"; };
-		10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "craft-beer-map_rotated.jpg"; sourceTree = "<group>"; };
 		167F71131B82459C00DAC9C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewerDetailViewController.swift; sourceTree = "<group>"; };
 		5F268A454F949365E2654AF7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +170,8 @@
 				0F166A891BD6F2CD00E5F13E /* VCMapView.swift */,
 				0F166A871BD6F0F800E5F13E /* locations.swift */,
 				10EE6DF01B6FE341007A8659 /* Main.storyboard */,
+				0FB08B471BE019DF007748FB /* BasicCell.swift */,
+				0FB08B451BE01748007748FB /* MainScreenViewController.swift */,
 				10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */,
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
 				10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */,
@@ -191,12 +181,10 @@
 				10EE6E141B6FE96F007A8659 /* ToursUIViewController.swift */,
 				0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */,
 				109C6AB61B7A805100C955B4 /* CraftBeerMap.xcdatamodeld */,
-				0F6AB47A1BD16BBA0076AFD3 /* beerdata.csv */,
 				0FD0458C1BDEA91600180E4E /* Hoyne.png */,
 				0FD0458A1BDEA26200180E4E /* moon.png */,
 				0FD045961BDEAB1600180E4E /* driftwood.png */,
 				0FD045841BDE9B0800180E4E /* phillipslogo.png */,
-				10EE6E0C1B6FE44E007A8659 /* BeerMap-Cover1.jpg */,
 				0FD045881BDEA07000180E4E /* lighthouse.png */,
 				10ECECD71B979FA2008F6114 /* irishtimes.png */,
 				0FD0459A1BDEAC0B00180E4E /* category12.png */,
@@ -210,7 +198,6 @@
 				0FD045941BDEAA8F00180E4E /* canoe.png */,
 				10ECECDF1B979FC8008F6114 /* bard.png */,
 				10ECECDD1B979FC2008F6114 /* phillips.png */,
-				10EE6E181B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg */,
 				0F6AB47C1BD582370076AFD3 /* square_map.png */,
 				10EE6E2A1B700641007A8659 /* 1438651657_factory.png */,
 				10EE6E261B700586007A8659 /* 1438651466_location-24.png */,
@@ -218,11 +205,6 @@
 				10EE6E2E1B700701007A8659 /* 1438651851_beer.png */,
 				10EE6E201B70049F007A8659 /* 1438650995_beer.png */,
 				10EE6E2C1B7006BD007A8659 /* 1438651783_walking.png */,
-				10EE6E321B7015E6007A8659 /* barnstormer.png */,
-				10EE6E381B7028BE007A8659 /* craft-beer-map_rotated.jpg */,
-				10EE6E301B700DAB007A8659 /* taphouse2.jpg */,
-				109C6AB91B7A86C300C955B4 /* craft-beer-mapLarge.jpg */,
-				10EE6E341B702058007A8659 /* craft-beer-map.jpg */,
 				10EE6DF31B6FE341007A8659 /* Images.xcassets */,
 				10EE6DF51B6FE341007A8659 /* LaunchScreen.xib */,
 				10EE6DEA1B6FE341007A8659 /* Supporting Files */,
@@ -352,8 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10EE6E391B7028BE007A8659 /* craft-beer-map_rotated.jpg in Resources */,
-				10EE6E191B6FFF03007A8659 /* Blue-Buck-Poster-full-size-2.jpg in Resources */,
 				0FD0459D1BDEACA700180E4E /* parallel49.png in Resources */,
 				10ECECDE1B979FC2008F6114 /* phillips.png in Resources */,
 				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
@@ -366,8 +346,6 @@
 				0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */,
 				0FD0459F1BDEAD0C00180E4E /* saltspring.png in Resources */,
 				10EE6E2F1B700701007A8659 /* 1438651851_beer.png in Resources */,
-				10EE6E0D1B6FE44E007A8659 /* BeerMap-Cover1.jpg in Resources */,
-				109C6ABA1B7A86C300C955B4 /* craft-beer-mapLarge.jpg in Resources */,
 				10ECECD81B979FA2008F6114 /* irishtimes.png in Resources */,
 				167F71141B82459C00DAC9C6 /* Default-568h@2x.png in Resources */,
 				0FD045911BDEA9D600180E4E /* spinakers.png in Resources */,
@@ -375,19 +353,15 @@
 				0FD045871BDE9D8800180E4E /* vib_logo_dark2.png in Resources */,
 				0FD0458B1BDEA26200180E4E /* moon.png in Resources */,
 				0FD045971BDEAB1600180E4E /* driftwood.png in Resources */,
-				10EE6E351B702058007A8659 /* craft-beer-map.jpg in Resources */,
-				10EE6E311B700DAB007A8659 /* taphouse2.jpg in Resources */,
 				0FD045931BDEAA2900180E4E /* swans.png in Resources */,
 				0FD045891BDEA07000180E4E /* lighthouse.png in Resources */,
 				10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */,
 				0FD0458D1BDEA91600180E4E /* Hoyne.png in Resources */,
 				10EE6E2D1B7006BD007A8659 /* 1438651783_walking.png in Resources */,
-				0F6AB47B1BD16BBA0076AFD3 /* beerdata.csv in Resources */,
 				10ECECDA1B979FB0008F6114 /* VIB.png in Resources */,
 				10EE6E271B700586007A8659 /* 1438651466_location-24.png in Resources */,
 				10EE6DF41B6FE341007A8659 /* Images.xcassets in Resources */,
 				10ECECE01B979FC8008F6114 /* bard.png in Resources */,
-				10EE6E331B7015E6007A8659 /* barnstormer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,12 +384,14 @@
 				109C6ABC1B7AA5CC00C955B4 /* Brewer.swift in Sources */,
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */,
+				0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
 				0F166A881BD6F0F800E5F13E /* locations.swift in Sources */,
 				10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */,
 				10EE6E131B6FE961007A8659 /* BreweriesUIViewController.swift in Sources */,
 				16C71D711B828C1600B75418 /* BrewerDetailViewController.swift in Sources */,
 				0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */,
+				0FB08B481BE019DF007748FB /* BasicCell.swift in Sources */,
 				10EE6E151B6FE96F007A8659 /* ToursUIViewController.swift in Sources */,
 				0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */,
 				10EE6E111B6FE951007A8659 /* TapHousesUIViewController.swift in Sources */,
