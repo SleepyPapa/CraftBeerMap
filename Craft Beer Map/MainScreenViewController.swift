@@ -15,7 +15,8 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
     var publicDB: CKDatabase?
     var currentRecord: CKRecord?
     var searchActive : Bool = false
-    let textCellIdentifier = "SimpleCell"
+    let basicCellIdentifier = "SimpleCell"
+    let iamgeCellIdentifier = "ImageCell"
     var NewsData:[(NewsName: String, NewsDetail: String, NewsImage: String, NewsDate: NSDate)] = []
     
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         getInfoFromCloudKit()
         tableView.delegate = self
         tableView.dataSource = self
+        configureTableView()
 
         // Do any additional setup after loading the view.
     }
@@ -40,12 +42,10 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         let container = CKContainer.defaultContainer()
         let publicDB = container.publicCloudDatabase
         //        let privateDB = container.privateCloudDatabase
-        let newsPredicate = NSPredicate(format: "NewsName BEGINSWITH %@",
-            "")
-        // 3
-        let query = CKQuery(recordType: "News",
-            predicate:  newsPredicate)
-        // 4
+        let newsPredicate = NSPredicate(value: true) //return everything
+
+        let query = CKQuery(recordType: "News", predicate:  newsPredicate)
+        query.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         publicDB.performQuery(query, inZoneWithID: nil) {
             results, error in
             if error != nil {
@@ -59,14 +59,14 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
                     let tempNewsName = record.objectForKey("NewsName") as! String
                     let tempNewsDetail = record.objectForKey("NewsDetail") as! String
                     let tempNewsImage = record.objectForKey("NewsImage") as! String
-//                    let tempNewsDate = record.objectForKey("NewsDate") as! NSDate
+                    let tempNewsDate = record.objectForKey("NewsDate") as! NSDate
                     
                     self.NewsData.append((NewsName:tempNewsName,
                         NewsDetail:tempNewsDetail,
                         NewsImage:tempNewsImage,
                         NewsDate:NSDate()))
                 }
-                self.NewsData.sortInPlace({$0.0<$1.0})
+//                self.NewsData.sortInPlace({$0.0<$1.0})
                 dispatch_async(dispatch_get_main_queue()) {
                     self.tableView.reloadData()
                     return
@@ -84,19 +84,57 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         }
 */        
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+/*    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier)
         cell!.textLabel?.text = NewsData[indexPath.row].NewsName
         cell!.detailTextLabel?.text = NewsData[indexPath.row].NewsDetail
         return cell!
     }
 
+
+    
+
+*/
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return basicCellAtIndexPath(indexPath)
+    }
+    
+    func basicCellAtIndexPath(indexPath:NSIndexPath) -> BasicCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(basicCellIdentifier) as! BasicCell
+        setTitleForCell(cell, indexPath: indexPath)
+        setSubtitleForCell(cell, indexPath: indexPath)
+        return cell
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return NewsData.count
     }
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
+    
+    func setTitleForCell(cell:BasicCell, indexPath:NSIndexPath) {
+        let item = NewsData[indexPath.row]
+        cell.titleLabel.text = item.NewsName ?? "[No Title]"
+    }
+    
+    func setSubtitleForCell(cell:BasicCell, indexPath:NSIndexPath) {
+        let item = NewsData[indexPath.row]
+        var subtitle: NSString? = item.NewsDetail ?? "[No Detail]"
+        
+        if let subtitle = subtitle {
+            
+            // Some subtitles are really long, so only display the first 200 characters
+            if subtitle.length > 200 {
+                cell.subtitleLabel.text = "\(subtitle.substringToIndex(200))..."
+                
+            } else {
+                cell.subtitleLabel.text = subtitle as String
+            }
+            
+        } else {
+            cell.subtitleLabel.text = ""
+        }
+    }
+    
+    
 }
