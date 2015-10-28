@@ -220,7 +220,6 @@ class BeersUIViewController: UIViewController, UITableViewDataSource, UITableVie
             }
         }
         func modelUpdated() {
-            //        refreshControl?.endRefreshing()
             tableView.reloadData()
         }
         func errorUpdating(error: NSError) {
