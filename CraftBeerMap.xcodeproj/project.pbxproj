@@ -10,6 +10,8 @@
 		0F166A881BD6F0F800E5F13E /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A871BD6F0F800E5F13E /* locations.swift */; };
 		0F166A8A1BD6F2CD00E5F13E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F166A891BD6F2CD00E5F13E /* VCMapView.swift */; };
 		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; };
+		0F853CEA1BE2925F00BF420B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CE91BE2925E00BF420B /* ImageCell.swift */; };
+		0F853CEC1BE2B01F00BF420B /* newspaper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F853CEB1BE2B01F00BF420B /* newspaper1.png */; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
 		0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB08B451BE01748007748FB /* MainScreenViewController.swift */; };
@@ -69,6 +71,8 @@
 		0F166A871BD6F0F800E5F13E /* locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locations.swift; sourceTree = "<group>"; };
 		0F166A891BD6F2CD00E5F13E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		0F6AB47C1BD582370076AFD3 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_map.png; sourceTree = "<group>"; };
+		0F853CE91BE2925E00BF420B /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		0F853CEB1BE2B01F00BF420B /* newspaper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper1.png; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
 		0FB08B451BE01748007748FB /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				0F166A871BD6F0F800E5F13E /* locations.swift */,
 				10EE6DF01B6FE341007A8659 /* Main.storyboard */,
 				0FB08B471BE019DF007748FB /* BasicCell.swift */,
+				0F853CE91BE2925E00BF420B /* ImageCell.swift */,
 				0FB08B451BE01748007748FB /* MainScreenViewController.swift */,
 				10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */,
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
@@ -193,6 +198,7 @@
 				0FD0459C1BDEACA700180E4E /* parallel49.png */,
 				0FD045901BDEA9D600180E4E /* spinakers.png */,
 				0FD045981BDEAB8E00180E4E /* 4mile.png */,
+				0F853CEB1BE2B01F00BF420B /* newspaper1.png */,
 				0FD045861BDE9D8800180E4E /* vib_logo_dark2.png */,
 				10ECECD91B979FB0008F6114 /* VIB.png */,
 				0FD045941BDEAA8F00180E4E /* canoe.png */,
@@ -336,6 +342,7 @@
 			files = (
 				0FD0459D1BDEACA700180E4E /* parallel49.png in Resources */,
 				10ECECDE1B979FC2008F6114 /* phillips.png in Resources */,
+				0F853CEC1BE2B01F00BF420B /* newspaper1.png in Resources */,
 				10EE6DF21B6FE341007A8659 /* Main.storyboard in Resources */,
 				0FD045991BDEAB8E00180E4E /* 4mile.png in Resources */,
 				0FD045851BDE9B0800180E4E /* phillipslogo.png in Resources */,
@@ -385,6 +392,7 @@
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */,
 				0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */,
+				0F853CEA1BE2925F00BF420B /* ImageCell.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
 				0F166A881BD6F0F800E5F13E /* locations.swift in Sources */,
 				10EE6E0F1B6FE93B007A8659 /* BeersUIViewController.swift in Sources */,
