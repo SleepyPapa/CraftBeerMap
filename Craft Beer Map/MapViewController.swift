@@ -74,6 +74,7 @@ class MapViewController: UIViewController{
 
         
         mapView.addAnnotations(interestingLocations)
+        
    }
     
     let regionRadius: CLLocationDistance = 2000
@@ -83,7 +84,14 @@ class MapViewController: UIViewController{
         mapView.setRegion(coordinateRegion, animated: true)
     }
 
-    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let location = locations.last as! CLLocation
+        
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        mapView.setRegion(region, animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

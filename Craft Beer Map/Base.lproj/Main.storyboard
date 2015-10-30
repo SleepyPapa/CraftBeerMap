@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -635,7 +636,7 @@
                                         <rect key="frame" x="0.0" y="315" width="567" height="236"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="236" id="12c-wt-rUG"/>
+                                            <constraint firstAttribute="width" secondItem="plB-8l-XZ7" secondAttribute="height" multiplier="567:236" id="OhZ-gb-NjH"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Zo-bY-DFu">
@@ -666,15 +667,15 @@
                                 <constraints>
                                     <constraint firstItem="7YD-rf-291" firstAttribute="leading" secondItem="Sns-nl-3Y0" secondAttribute="leadingMargin" constant="-8" id="0FD-Ob-RkQ"/>
                                     <constraint firstAttribute="bottom" secondItem="sjh-SB-NKw" secondAttribute="bottom" constant="427" id="BVI-zM-SQV"/>
+                                    <constraint firstItem="plB-8l-XZ7" firstAttribute="top" secondItem="2ld-6u-z2f" secondAttribute="bottom" constant="1" id="C3z-xm-afa"/>
                                     <constraint firstItem="lPz-Ky-C4k" firstAttribute="firstBaseline" secondItem="Sns-nl-3Y0" secondAttribute="top" constant="81" id="C9n-mU-5op"/>
-                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="Sns-nl-3Y0" secondAttribute="top" constant="157" id="Cyl-bD-IEs"/>
                                     <constraint firstAttribute="trailing" secondItem="sjh-SB-NKw" secondAttribute="trailing" id="HTe-Wa-bR2"/>
-                                    <constraint firstItem="plB-8l-XZ7" firstAttribute="top" secondItem="Sns-nl-3Y0" secondAttribute="top" constant="315" id="KMx-aY-dTx"/>
                                     <constraint firstItem="plB-8l-XZ7" firstAttribute="top" secondItem="2ld-6u-z2f" secondAttribute="bottom" constant="1" id="PhD-Nz-ufv"/>
                                     <constraint firstItem="3Zo-bY-DFu" firstAttribute="trailing" secondItem="plB-8l-XZ7" secondAttribute="trailing" id="Q2u-5j-5P1"/>
                                     <constraint firstItem="3Zo-bY-DFu" firstAttribute="leading" secondItem="7YD-rf-291" secondAttribute="trailing" constant="8" id="S3r-D8-ZML"/>
-                                    <constraint firstItem="7YD-rf-291" firstAttribute="top" secondItem="plB-8l-XZ7" secondAttribute="bottom" constant="-423" id="YXx-C8-TjH"/>
+                                    <constraint firstItem="3Zo-bY-DFu" firstAttribute="top" secondItem="sjh-SB-NKw" secondAttribute="bottom" id="ZGa-jL-pcJ"/>
                                     <constraint firstItem="sjh-SB-NKw" firstAttribute="leading" secondItem="Sns-nl-3Y0" secondAttribute="leading" id="al1-fH-xwp"/>
+                                    <constraint firstItem="2ld-6u-z2f" firstAttribute="top" secondItem="3Zo-bY-DFu" secondAttribute="bottom" constant="3" id="dQl-ez-sJX"/>
                                     <constraint firstAttribute="bottom" secondItem="plB-8l-XZ7" secondAttribute="bottom" id="f2V-qs-TtD"/>
                                     <constraint firstItem="sjh-SB-NKw" firstAttribute="top" secondItem="Sns-nl-3Y0" secondAttribute="top" constant="94" id="jxl-FZ-PUg"/>
                                     <constraint firstItem="lPz-Ky-C4k" firstAttribute="leading" secondItem="Sns-nl-3Y0" secondAttribute="leading" id="wR7-Ia-3o0"/>
