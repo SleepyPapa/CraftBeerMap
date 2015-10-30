@@ -94,8 +94,8 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
     
     func addFirstEntryToNews(){
         let tempNewsName = "Welcome to Victoria Beers!"
-        let tempNewsDetail = "Let our experts guide you around the beers that have been produced in this beautiful part of the world. Let 'The Swig' give you a few recommendations to try and use the Maps section for a few suggested pub crawls in this wonderful city! Cheers!"
-        let tempNewsImage = "wp-content/uploads/2012/11/finallogo2-e1354055173206.png"
+        let tempNewsDetail = "Let our experts guide you around the beers that have been produced in this beautiful part of the world. Let 'The Swig' give you a few recommendations to try and use the Maps section for a few suggested watering holes in this wonderful city! Cheers!"
+        let tempNewsImage = "100logo.png"
         let tempNewsDate = NSDate()
         
         self.NewsData.append((NewsName:tempNewsName,
@@ -113,15 +113,6 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     func hasImageAtIndexPath(indexPath:NSIndexPath) -> Bool {
-        //        let item = items[indexPath.row]
-        //        let mediaThumbnailArray = item.mediaThumbnails as! [RSSMediaThumbnail]
-        //
-        //        for mediaThumbnail in mediaThumbnailArray {
-        //            if mediaThumbnail.url != nil {
-        //                return true
-        //            }
-        //        }
-        
         let item = NewsData[indexPath.row]
         if ((item.NewsImage==" ")||(item.NewsImage=="NONE")){
             return false //no Image set for this entry so return false
@@ -140,8 +131,12 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
     
     func setImageForCell(cell:ImageCell, indexPath:NSIndexPath) {
         let item = NewsData[indexPath.row]
-        let pathName=("http://victoriabeers.com/")+item.NewsImage
-        cell.customImageView.imageFromUrl(pathName)
+        if item.NewsImage=="100logo.png"{ //New logo as default
+            cell.customImageView.image=UIImage(named:item.NewsImage)
+        } else {//Get image from website
+            let pathName=("http://victoriabeers.com/")+item.NewsImage
+            cell.customImageView.imageFromUrl(pathName)
+        }
     }
     
     func basicCellAtIndexPath(indexPath:NSIndexPath) -> BasicCell {
@@ -181,5 +176,16 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if ((segue.identifier == "SimpleDetail")||(segue.identifier == "ImageDetail")) {
+            let svc = segue.destinationViewController as! NewsDetailViewController
+            if let currentIndex  = tableView.indexPathForSelectedRow?.row{
+                let item = NewsData[currentIndex]
+                svc.newsTitle = item.NewsName
+                svc.newsDetail = item.NewsDetail
+            }
+        }
+    }
     
 }

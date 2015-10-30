@@ -12,6 +12,8 @@
 		0F6AB47D1BD582370076AFD3 /* square_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6AB47C1BD582370076AFD3 /* square_map.png */; };
 		0F853CEA1BE2925F00BF420B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CE91BE2925E00BF420B /* ImageCell.swift */; };
 		0F853CEC1BE2B01F00BF420B /* newspaper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F853CEB1BE2B01F00BF420B /* newspaper1.png */; };
+		0F853CEE1BE3D83B00BF420B /* 100logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F853CED1BE3D83B00BF420B /* 100logo.png */; };
+		0F853CF01BE3DD8E00BF420B /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CEF1BE3DD8E00BF420B /* NewsDetailViewController.swift */; };
 		0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */; };
 		0F8790601B8FC570000E13B1 /* ToursDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */; };
 		0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB08B451BE01748007748FB /* MainScreenViewController.swift */; };
@@ -73,6 +75,8 @@
 		0F6AB47C1BD582370076AFD3 /* square_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square_map.png; sourceTree = "<group>"; };
 		0F853CE91BE2925E00BF420B /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		0F853CEB1BE2B01F00BF420B /* newspaper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper1.png; sourceTree = "<group>"; };
+		0F853CED1BE3D83B00BF420B /* 100logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100logo.png; sourceTree = "<group>"; };
+		0F853CEF1BE3DD8E00BF420B /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		0F8790511B8B9D81000E13B1 /* TapHouseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHouseDetailViewController.swift; sourceTree = "<group>"; };
 		0F87905F1B8FC570000E13B1 /* ToursDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursDetailViewController.swift; sourceTree = "<group>"; };
 		0FB08B451BE01748007748FB /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				0FB08B451BE01748007748FB /* MainScreenViewController.swift */,
 				10EE6E0E1B6FE93B007A8659 /* BeersUIViewController.swift */,
 				10EE6E1A1B6FFF53007A8659 /* BeerDetailViewController.swift */,
+				0F853CEF1BE3DD8E00BF420B /* NewsDetailViewController.swift */,
 				10EE6E121B6FE961007A8659 /* BreweriesUIViewController.swift */,
 				16C71D701B828C1600B75418 /* BrewerDetailViewController.swift */,
 				10EE6E101B6FE951007A8659 /* TapHousesUIViewController.swift */,
@@ -207,6 +212,7 @@
 				0F6AB47C1BD582370076AFD3 /* square_map.png */,
 				10EE6E2A1B700641007A8659 /* 1438651657_factory.png */,
 				10EE6E261B700586007A8659 /* 1438651466_location-24.png */,
+				0F853CED1BE3D83B00BF420B /* 100logo.png */,
 				10EE6E281B7005CF007A8659 /* 1438651544_09-house.png */,
 				10EE6E2E1B700701007A8659 /* 1438651851_beer.png */,
 				10EE6E201B70049F007A8659 /* 1438650995_beer.png */,
@@ -362,6 +368,7 @@
 				0FD045971BDEAB1600180E4E /* driftwood.png in Resources */,
 				0FD045931BDEAA2900180E4E /* swans.png in Resources */,
 				0FD045891BDEA07000180E4E /* lighthouse.png in Resources */,
+				0F853CEE1BE3D83B00BF420B /* 100logo.png in Resources */,
 				10EE6E211B70049F007A8659 /* 1438650995_beer.png in Resources */,
 				0FD0458D1BDEA91600180E4E /* Hoyne.png in Resources */,
 				10EE6E2D1B7006BD007A8659 /* 1438651783_walking.png in Resources */,
@@ -392,6 +399,7 @@
 				10EE6E1B1B6FFF53007A8659 /* BeerDetailViewController.swift in Sources */,
 				0F8790521B8B9D81000E13B1 /* TapHouseDetailViewController.swift in Sources */,
 				0FB08B461BE01748007748FB /* MainScreenViewController.swift in Sources */,
+				0F853CF01BE3DD8E00BF420B /* NewsDetailViewController.swift in Sources */,
 				0F853CEA1BE2925F00BF420B /* ImageCell.swift in Sources */,
 				10EE6DED1B6FE341007A8659 /* AppDelegate.swift in Sources */,
 				0F166A881BD6F0F800E5F13E /* locations.swift in Sources */,
