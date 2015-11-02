@@ -18,7 +18,7 @@ class NewsDetailViewController: UIViewController {
         super.viewDidLoad()
         let textViewToUpdate = self.view.viewWithTag(70) as! UILabel
         textViewToUpdate.text = newsTitle
-        let secondTextViewToUpdate = self.view.viewWithTag(71) as! UILabel
+        let secondTextViewToUpdate = self.view.viewWithTag(71) as! UITextView
         secondTextViewToUpdate.text = newsDetail
 
         // Do any additional setup after loading the view.

@@ -24,7 +24,7 @@ class ToursDetailViewController: UIViewController {
         
         let textViewToUpdate = self.view.viewWithTag(41) as! UITextField
         textViewToUpdate.text = swigName
-        let textViewToUpdate2 = self.view.viewWithTag(40) as! UITextView
+        let textViewToUpdate2 = self.view.viewWithTag(40) as! UILabel
         textViewToUpdate2.text = swigReview
         let textViewToUpdate3 = self.view.viewWithTag(42) as! UITextField
         textViewToUpdate3.text = swigDate
