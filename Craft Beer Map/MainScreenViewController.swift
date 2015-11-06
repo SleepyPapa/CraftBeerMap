@@ -92,6 +92,10 @@ class MainScreenViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
+    @IBAction func Refresh(sender: AnyObject) {
+        getInfoFromCloudKit()
+    }
+    
     func addFirstEntryToNews(){
         let tempNewsName = "Welcome to Victoria Beers!"
         let tempNewsDetail = "Let our experts guide you around the beers that have been produced in this beautiful part of the world. Let 'The Swig' give you a few recommendations to try and use the Maps section for a few suggested watering holes in this wonderful city! Cheers!"

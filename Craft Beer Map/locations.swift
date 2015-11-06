@@ -43,7 +43,7 @@ class RelevantLocations: NSObject, MKAnnotation {
         case "BrewPub", "Brewery":
             return .Red
         case "Tap House":
-            return .Purple
+            return .Red
         default:
             return .Green
         }
